@@ -27,6 +27,7 @@
         body{
             color: white;
             font-family: 'Crimson Text';
+            overflow-x: hidden;
         }
         #icons .navbar  ul{
             list-style-type: none;
@@ -84,7 +85,6 @@
             width: 30%;
 
         }
-q
     
 
         #navbarTogglerDemo03 ul li:active a {
@@ -107,14 +107,14 @@ q
             -o-background-size: cover;
             background-size: cover;
         }
-      
-        /* a.carousel-control-prev{
+        a.carousel-control-prev{
             position: relative;
             top: -40px;
             left:170px;
             width: 12.69px;
             border: 1px solid white;
             border-width: 100%;
+            /* border-radius: 50%; */
             
 
         }
@@ -126,7 +126,7 @@ q
             border: 1px solid white;
             border-width: 100%;
             
-        } */
+        }
         .carousel-content {
             position: absolute;
             bottom: 10%;
@@ -134,6 +134,56 @@ q
             z-index: 20;
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        }
+        .caption-content{
+            position: relative; top: 250px;
+            font-family:'Crimson Text'; 
+        }
+        .caption-content .partner-intro{
+            font-size:62px;
+
+        }
+        .caption-content .partner-logo{
+            width: 84px; height: 84px;
+        }
+        .caption-content footer a.btn {
+                padding: 50px;
+            }
+            @media (any-pointer:coarse) { 
+            .caption-content  {
+                position: relative;
+                top: 120px;
+
+            }
+            .caption-content .partner-logo{
+                width: 54px; height: 54px;
+            }
+            .caption-content .partner-intro{
+                font-size:42px;
+
+            }
+            .caption-content footer a.btn {
+                padding: 15px;
+            }
+            a.carousel-control-prev{
+            position: relative;
+            top: -63px;
+            left:170px;
+            width: 12.69px;
+            border: 1px solid white;
+            border-width: 100%;
+            /* border-radius: 50%; */
+        
+        }
+        a.carousel-control-next{
+            position: relative;
+            top: -85px;
+            left: 190px;
+            width: 12.69px;
+            border: 1px solid white;
+            border-width: 100%;
+            
+        }
         }
         .featured{
              font-family:'Crimson Text';
@@ -144,21 +194,6 @@ q
          a.btn{
             background: #FF0000;
         }
-        @media (max-width: 768px) {
-            a.btn {
-                padding:2px 4px;
-                font-size:80%;
-                line-height: 1;
-            }
-        }
-
-    @media (min-width: 769px) and (max-width: 992px) {
-        a.btn {
-            padding:4px 9px;
-            font-size:90%;
-            line-height: 1.2;
-        }
-    }
         
         #about{
             position: relative;
@@ -301,6 +336,7 @@ q
         font-weight: 600;
         font-size: 36px;
         line-height: 185.18%;
+        color: white;
         /* or 67px */
 
         text-align: center;
@@ -391,12 +427,12 @@ q
                         <div class="carousel-item item active  bg-gradient " style="background-image: url('assets/images/backgrounds/section-01.png')">
                             <div class="titan-caption">
                                     <div class=" caption-content">
-                                        <div class="row" style="position: relative; top: 250px;">
+                                        <div class="row partner-intro">
                                             <div class="col-md-12 mt-3 pl-5">
-                                                <img  class="pull-left " src="assets/images/Logo/cristina.png" style="width: 84px; height: 84px;">
+                                                <img  class="pull-left partner-logo " src="assets/images/Logo/cristina.png">
                                             </div>
                                             <div class="col-md-12 mt-2 pl-5">
-                                                <div class=" pull-left" style="font-family:'Crimson Text'; font-size:62px;">Comfort & Design</div>
+                                                <div class=" pull-left" >Comfort & Design</div>
                                             </div>
                                             <div class="col-md-12 mt-1 pl-5">
                                                 <div class="red-line"></div>
@@ -411,7 +447,7 @@ q
                                             <div class="row fixed-bottom featured">
                                                 <div class="col-md-12 " >
                                                     <p class="pull-left p-3 pl-sm-4 mt-3" style= "font-family:'Crimson Text'; letter-spacing: 5px; margin-left: 10px;">FEATURED  <span class="pl-5 ml-5  num"></span></p>
-                                                    <a class="section-scroll btn btn-sm p-5 pull-right  text-white" href="#showcase">GO TO STUDIO <span class="ml-5 pt-3" >
+                                                    <a class="section-scroll btn btn-sm  pull-right  text-white" href="#showcase">GO TO STUDIO <span class="ml-5 pt-3" >
                                                             <img src="assets/vectors/arrow.svg"></span>
                                                     </a>
                                                     
@@ -489,7 +525,7 @@ q
                                         </div>
                                     </div> 
                         </div>
-                        <div class=" p-0">
+                        <div class="fixed-bottom p-0">
                                 <a class="carousel-control-prev prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
@@ -649,12 +685,12 @@ q
                                     </p>
                             </div>
                             <div class="row pt-5">
-                                    <div class="col-md-3 text-center" >
+                                    <div class="col-md-6 text-center" >
                                             <div class="contact-box">
                                             </div>
                                            
                                     </div>
-                                    <div class="col-md-3 text-center" >
+                                    <div class="col-md-6 text-center" >
                                             <div class="contact-box">
                                             </div>
                                            
