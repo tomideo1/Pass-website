@@ -108,14 +108,13 @@ q
             background-size: cover;
         }
       
-        a.carousel-control-prev{
+        /* a.carousel-control-prev{
             position: relative;
             top: -40px;
             left:170px;
             width: 12.69px;
             border: 1px solid white;
             border-width: 100%;
-            /* border-radius: 50%; */
             
 
         }
@@ -127,7 +126,7 @@ q
             border: 1px solid white;
             border-width: 100%;
             
-        }
+        } */
         .carousel-content {
             position: absolute;
             bottom: 10%;
@@ -260,7 +259,13 @@ q
       
 
         /* Create four equal columns that sits next to each other */
-     
+        .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0;
+        }
         .column {
         -ms-flex: 25%; /* IE10 */
         flex: 25%;
@@ -484,7 +489,7 @@ q
                                         </div>
                                     </div> 
                         </div>
-                        <div class="fixed-bottom p-0">
+                        <div class=" p-0">
                                 <a class="carousel-control-prev prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
