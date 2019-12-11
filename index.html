@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+  Stylesheets
+  =============================================
+
+  -->
+    <!-- Default stylesheets-->
+   <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crimson+Text" />
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <style>
+        body{
+            color: white;
+            font-family: 'Crimson Text';
+        }
+        #icons .navbar  ul{
+            list-style-type: none;
+            padding:0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        }
+        .red-line{
+            /*position: absolute;*/
+            width: 272px;
+            height: 0px;
+            /*left: 37px;*/
+            /*top: 505px;*/
+
+            border: 1px solid #FF0000;
+        }
+        .btn-round{
+            border-radius: 50%;
+        }
+        @media (max-width:1024px){
+            #separator{
+                display: none;
+            }
+
+
+        }
+        a {
+            outline: none;
+        }
+        #navbarTogglerDemo03 ul li a {
+            color: red;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            transition: color 0.5s;
+        }
+
+        #navbarTogglerDemo03 ul li .underline {
+            height: 1px;
+            background-color: transparent;
+            width: 0%;
+            transition: width 0.2s, background-color 0.5s;
+            margin: -2 auto;
+        }
+
+        #navbarTogglerDemo03 ul li.nav-item.active-link .underline {
+            width: 30%;
+            background-color: red;
+        }
+
+        #navbarTogglerDemo03 ul li:hover .underline {
+            background-color: red;
+            width: 30%;
+
+        }
+q
+    
+
+        #navbarTogglerDemo03 ul li:active a {
+            transition: none;
+            color: red;
+
+        }
+
+        #navbarTogglerDemo03 ul li:active .underline {
+            transition: none;
+            color: red;
+        }
+        
+        .carousel-item {
+            height: 100vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+      
+        a.carousel-control-prev{
+            position: relative;
+            top: -40px;
+            left:170px;
+            width: 12.69px;
+            border: 1px solid white;
+            border-width: 100%;
+            /* border-radius: 50%; */
+            
+
+        }
+        a.carousel-control-next{
+            position: relative;
+            top: -62px;
+            left: 190px;
+            width: 12.69px;
+            border: 1px solid white;
+            border-width: 100%;
+            
+        }
+        .carousel-content {
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            z-index: 20;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        }
+        .featured{
+             font-family:'Crimson Text';
+             letter-spacing: 5px;
+              margin-left: 10px;
+        }
+      
+         a.btn{
+            background: #FF0000;
+        }
+        @media (max-width: 768px) {
+            a.btn {
+                padding:2px 4px;
+                font-size:80%;
+                line-height: 1;
+            }
+        }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        a.btn {
+            padding:4px 9px;
+            font-size:90%;
+            line-height: 1.2;
+        }
+    }
+        
+        #about{
+            position: relative;
+            padding-bottom: 140px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-color: #131313;
+        }
+        #about h5.small-header {
+            font-family: 'Avenir LT Std';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 17px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.355em;
+            padding-top: 100px;
+        }
+            #about .text-paragraph {
+            font-family: Crimson Text;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 224.18%;
+            /* or 40px */
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        #showcase{
+            padding-bottom: 140px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-color: white;
+            color: #000000;
+        }
+        #showcase h5.small-header {
+            font-family: 'Avenir LT Std';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 17px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.355em;
+            padding-top: 100px;
+        }
+        .partner{
+            width: 195px;
+            height: 195px;
+            border: 1px solid #FF0000;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        .partner-title{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 33px;
+            /* identical to box height */
+            text-align: center;
+
+            color: #000000;
+            
+        }
+        .partner-title .line{
+            width: 60px;
+            height: 0px;
+            padding: 0 auto;
+            display: inline-block;
+            border: 1px solid #FF0000;
+        }
+
+        .partner:hover:hover{
+            border: 5px solid #FF0000;
+            box-sizing: border-box;
+        }
+        .center-block {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #works{
+            padding-bottom: 140px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-color: #313030;
+            color: #000000;
+        }
+      
+
+        /* Create four equal columns that sits next to each other */
+     
+        .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 40%;
+        padding: 0px;
+        }
+
+        .column img {
+        vertical-align: middle;
+        width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+        }
+        .parallax-text{
+        font-family: Crimson Text;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 185.18%;
+        /* or 67px */
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+        }
+        #contact{
+            padding-bottom: 140px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-color: #313030;
+            color: white;
+        }
+        #contact h5.small-header {
+            font-family: 'Avenir LT Std';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 17px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.355em;
+            padding-top: 100px;
+        }
+        .contact-box{
+            width: 464px;
+            height: 500px;
+            border: 1px solid #FF0000;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60" id="home">
+<main>
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <nav class="navbar  navbar-expand-sm navbar-custom navbar-transparent fixed-top one-page"  role="navigation">
+        <a class="navbar-brand pl-5 mt-3 mr-lg-5 mr-auto " href="#">
+            <img class="pass-logo" src="assets/images/Logo/pass.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars text-white"></i></span>
+        </button>
+
+        <div class="navbar-collapse collapse " id="navbarTogglerDemo03">
+            <ul class="navbar-nav navbar-right mr-auto mt-4 mt-lg-2 text-uppercase ">
+                <li class="nav-item active-link">
+                    <a class="nav-link  text-white section-scroll" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white section-scroll" href="#about">About</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white section-scroll" href="#showcase">Showcase</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white section-scroll" href="#contact">Contact</a>
+                    <div class="underline"></div>
+                </li>
+            </ul>
+            <ul class="navbar-nav  ml-auto mt-4 mt-lg-2 text-uppercase " id="icons">
+                <li class="nav-item active mr-5">
+                    <a class="nav-link text-white" href="#" style="font-size: 18px;"><i class="fa fa-facebook"></i></a>
+                </li>
+
+                <li class="nav-item active mr-5">
+                    <a class="nav-link text-white" href="#" style="font-size: 18px;"><i class="fa fa-twitter"></i></a>
+                </li>
+
+                <li class="nav-item active mr-3">
+                    <a class="nav-link text-white" href="#" style="font-size: 18px;"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <section class="home-section home-parallax home-fade home-full-height" >
+                <div id="carouselExampleIndicators" class="carousel slide" >
+                        <div class="carousel-inner" role="listbox">
+                        <!-- Slide One - Set the background image for this slide in the line below -->
+                        <div class="carousel-item item active  bg-gradient " style="background-image: url('assets/images/backgrounds/section-01.png')">
+                            <div class="titan-caption">
+                                    <div class=" caption-content">
+                                        <div class="row" style="position: relative; top: 250px;">
+                                            <div class="col-md-12 mt-3 pl-5">
+                                                <img  class="pull-left " src="assets/images/Logo/cristina.png" style="width: 84px; height: 84px;">
+                                            </div>
+                                            <div class="col-md-12 mt-2 pl-5">
+                                                <div class=" pull-left" style="font-family:'Crimson Text'; font-size:62px;">Comfort & Design</div>
+                                            </div>
+                                            <div class="col-md-12 mt-1 pl-5">
+                                                <div class="red-line"></div>
+                                            </div>
+                                            <div class="col-md-4 text-justify mt-3 pl-5">
+                                                        <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat nec orci vitae accumsan.
+                                                        </span>
+                                            </div>
+                                        </div>
+                                        <footer >
+                                            <div class="row fixed-bottom featured">
+                                                <div class="col-md-12 " >
+                                                    <p class="pull-left p-3 pl-sm-4 mt-3" style= "font-family:'Crimson Text'; letter-spacing: 5px; margin-left: 10px;">FEATURED  <span class="pl-5 ml-5  num"></span></p>
+                                                    <a class="section-scroll btn btn-sm p-5 pull-right  text-white" href="#showcase">GO TO STUDIO <span class="ml-5 pt-3" >
+                                                            <img src="assets/vectors/arrow.svg"></span>
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="carousel-item item  bg-gradient " style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+                                <div class="titan-caption">
+                                        <div class=" caption-content">
+                                            <div class="row" style="position: relative; top: 250px;">
+                                                <div class="col-md-12 mt-3 pl-5">
+                                                    <img  class="pull-left " src="assets/images/Logo/cristina.png" style="width: 84px; height: 84px;">
+                                                </div>
+                                                <div class="col-md-12 mt-2 pl-5">
+                                                    <div class=" pull-left" style="font-family:'Crimson Text'; font-size:62px;">Comfort & Design</div>
+                                                </div>
+                                                <div class="col-md-12 mt-1 pl-5">
+                                                    <div class="red-line"></div>
+                                                </div>
+                                                <div class="col-md-4 text-justify mt-3 pl-5">
+                                                            <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat nec orci vitae accumsan.
+                                                            </span>
+                                                </div>
+                                            </div>
+                                            <footer >
+                                                <div class="row fixed-bottom featured">
+                                                    <div class="col-md-12 " >
+                                                        <p class="pull-left p-3 pl-sm-4 mt-3" style= "font-family:'Crimson Text'; letter-spacing: 5px; margin-left: 10px;">FEATURED  <span class="pl-5 ml-5  num"></span></p>
+                                                        <a class="section-scroll btn btn-sm p-5 pull-right  text-white" href="#showcase">GO TO STUDIO <span class="ml-5 pt-3" >
+                                                                <img src="assets/vectors/arrow.svg"></span>
+                                                        </a>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item item  bg-gradient " style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+                                    <div class="titan-caption">
+                                            <div class=" caption-content">
+                                                <div class="row" style="position: relative; top: 250px;">
+                                                    <div class="col-md-12 mt-3 pl-5">
+                                                        <img  class="pull-left " src="assets/images/Logo/cristina.png" style="width: 84px; height: 84px;">
+                                                    </div>
+                                                    <div class="col-md-12 mt-2 pl-5">
+                                                        <div class=" pull-left" style="font-family:'Crimson Text'; font-size:62px;">Comfort & Design</div>
+                                                    </div>
+                                                    <div class="col-md-12 mt-1 pl-5">
+                                                        <div class="red-line"></div>
+                                                    </div>
+                                                    <div class="col-md-4 text-justify mt-3 pl-5">
+                                                                <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat nec orci vitae accumsan.
+                                                                </span>
+                                                    </div>
+                                                </div>
+                                                <footer >
+                                                    <div class="row fixed-bottom featured">
+                                                        <div class="col-md-12 " >
+                                                            <p class="pull-left p-3 pl-sm-4 mt-3" style= "font-family:'Crimson Text'; letter-spacing: 5px; margin-left: 10px;">FEATURED  <span class="pl-5 ml-5  num"></span></p>
+                                                            <a class="section-scroll btn btn-sm p-5 pull-right  text-white" href="#showcase">GO TO STUDIO <span class="ml-5 pt-3" >
+                                                                    <img src="assets/vectors/arrow.svg"></span>
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div> 
+                        </div>
+                        <div class="fixed-bottom p-0">
+                                <a class="carousel-control-prev prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                <a class="carousel-control-next next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                        </div>
+                    </div>
+                    
+        </section>
+        <div class="main">
+            <section class="text-center" id="about">
+                    <div class="container">
+                    <h5 class="small-header">ABOUT US</h5> 
+                    <h1 class="jumbotron-heading mt-2 pb-2">Who We Are</h1>
+                    <div class="red-line" style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
+                    <p class="lead text-paragraph mt-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque ac elit lacus. Quisque ullamcorper erat sem, non tincidunt sapien mattis vel. Sed laoreet sagittis erat eget posuere. Donec placerat mauris a ex tristique, laoreet maximus ante consectetur. Fusce ornare venenatis vehicula. Donec pharetra consectetur risus. Nulla nec tincidunt lectus.
+                        </p>
+                    
+                    </div>
+                    <button class="section-scroll btn p-5 pull-right mt-4" style="background-color: #FF0000; color: #ffffff;" href="#showcase">READ MORE<span class="ml-5 pt-3" >
+                            <img src="assets/vectors/arrow.svg"></span>
+                </button>
+            </section>
+            <section id="showcase">
+                    <div class="container">
+                        <div class="text-center">
+                                <h5 class="small-header">OUR PARTNERS</h5> 
+                                <h1 class="jumbotron-heading mt-2 pb-2">Take a Look for Yourself</h1>
+                                <div class="red-line" style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
+                                <p class="lead text-paragraph mt-5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
+                                </p>
+                        </div>
+                    <div class="row">
+                                <div class="col-md-3 text-center" >
+                                        <div class="partner">
+                                            <img  class="p-4 mt-5 img-fluid" src="/assets/images/partners/Vector (3).png" style="display: block;">
+                                        </div>
+                                        <div class="partner-title align-items-center justify-content-center">
+                                            <p class="mt-2">Joseph Joseph</p>
+                                            <div class=" line"></div>
+                                        </div>
+                                </div>
+                                <div class="col-md-3 text-center" >
+                                        <div class="partner">
+                                                <img  class="p-4 mt-5 img-fluid" src="/assets/images/partners/logow (2) 3.png" style="display: block;">
+                                        </div>
+                                        <div class="partner-title">
+                                            <p class="mt-2">Progress Profiles</p>
+                                            <div class="line"></div>
+                                        </div>
+                                </div>
+                                <div class="col-md-3 text-center" >
+                                        <div class="partner">
+                                                <img  class="p-4 mt-5 img-fluid" src="/assets/images/partners/porte_blindate_dibi 1.png" style="display: block;">
+                                        </div>
+                                        <div class="partner-title">
+                                            <p class="mt-2">dibi Securezza & Design</p>
+                                            <div class="line"></div>
+                                        </div>
+                                </div>
+                                <div class="col-md-3 text-center" >
+                                        <div class="partner">
+                                                <img  class="p-4 mt-5 img-fluid" src="/assets/images/partners/logo-trans-222x62bn 1.png" style="display: block;">
+                                        </div>
+                                        <div class="partner-title">
+                                            <p class="mt-2"> Sonia</p>
+                                            <div class="line"></div>
+                                        </div>
+                                </div>
+                                
+                    </div>
+                    <div class="row mt-5">
+                            <div class="col-md-3 text-center" >
+                                    <div class="partner">
+                                        <img  class="p-4 mt-4 img-fluid" src="/assets/images/partners/logo-geromin-new 2.png" style="display: block;">
+                                    </div>
+                                    <div class="partner-title align-items-center justify-content-center">
+                                        <p class="mt-2">Geromin Group</p>
+                                        <div class=" line"></div>
+                                    </div>
+                            </div>
+                            <div class="col-md-3 text-center" >
+                                    <div class="partner">
+                                            <img  class="pt-5 mt-sm-4" src="/assets/images/partners/logo (2) 1.png">
+                                    </div>
+                                    <div class="partner-title">
+                                        <p class="mt-2">the.artceram</p>
+                                        <div class="line"></div>
+                                    </div>
+                            </div>
+                            <div class="col-md-3 text-center" >
+                                    <div class="partner">
+                                            <img  class="p-4 mt-5 img-fluid" src="/assets/images/partners/" style="display: block;">
+                                    </div>
+                                    <div class="partner-title">
+                                        <p class="mt-2">Marca Corona</p>
+                                        <div class="line"></div>
+                                    </div>
+                            </div>
+                            <div class="col-md-3 text-center" >
+                                    <div class="partner">
+                                            <img  class="p-4 mt-1 img-fluid" src="/assets/images/partners/logo (1) 2.png" style="display: block;">
+                                    </div>
+                                    <div class="partner-title">
+                                        <p class="mt-2"> Cristina </p>
+                                        <div class="line"></div>
+                                    </div>
+                            </div>
+                            
+                </div>
+                
+            </section>
+            <section id="works">
+                    <div class="container-fluid">
+                    <div class="row d-flex justify-content-center pt-5"> 
+                        <div class="column">
+                                <img src="assets/images/works/home_01 1.png" style="width:100%">
+                                <img src="assets/images/works/2019-ethos-c-03 1.png" style="width:100%">
+                                <img src="assets/images/works/generated_SOU_PearlGrey_Bagno_P2.jpg 1.png" style="width:100%">
+                                <img src="assets/images/works/Sonia-Bathroom-Essence-07 1.png" style="width:100%">
+                                <img src="assets/images/works/DynamoRainbow 1.png" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="assets/images/works/generated_sou_pearlgrey_bagno_p1.jpg 1.png" style="width:100%">
+                                <img src="assets/images/works/1-overclay 1.png" style="width:100%">
+                                <img src="assets/images/works/Sonia-Bathroom-Essence-07 1.png" style="width:100%">
+                                <img src="assets/images/works/Storia (1) 1.png" style="width:100%">
+                                <img src="assets/images/works/generated_sou_pearlgrey_bagno.jpg 1.png" style="width:100%">
+                            </div>          
+                    </div>
+                
+            </section>
+            <section class="module parallax-bg" data-background="assets/images/backgrounds/Rectangle-20.png">
+                <div class="container">
+                        <div class="titan-caption">
+                                <div class="caption-content">
+                                    <p class="parallax-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor. 
+                                    </p>
+                                </div>
+                            </div>
+                </div>
+              </section>
+              <section id="contact">
+                    <div class="container">
+                            <div class="text-center">
+                                    <h5 class="small-header">CONTACT US</h5> 
+                                    <h1 class="jumbotron-heading mt-2 pb-2">GET IN TOUCH</h1>
+                                    <div class="red-line" style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
+                                    <p class="lead text-paragraph mt-5">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
+                                    </p>
+                            </div>
+                            <div class="row pt-5">
+                                    <div class="col-md-3 text-center" >
+                                            <div class="contact-box">
+                                            </div>
+                                           
+                                    </div>
+                                    <div class="col-md-3 text-center" >
+                                            <div class="contact-box">
+                                            </div>
+                                           
+                                    </div>
+                            </div>
+              </section>
+                        
+        </div>
+        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+<!--
+JavaScripts
+=============================================
+-->
+
+<script src="assets/lib/jquery/dist/jquery.js"></script>
+<script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/lib/wow/dist/wow.js"></script>
+<script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+<script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+<script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+<script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+<script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="assets/lib/smoothscroll.js"></script>
+<script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    $('.nav-item').on('click', function() {
+        $('.active-link').removeClass('active-link');
+        $(this).addClass('active-link');
+    });
+
+    var totalItems = $('.item').length;
+            var currentIndex = $('div.item.active').index() + 1;
+            var down_index;
+            $('.num').html(''+currentIndex+'/'+totalItems+'');
+
+                $(".next").click(function(){
+                currentIndex_active = $('div.item.active').index() + 2;
+                if (totalItems >= currentIndex_active)
+                {
+                    down_index= $('div.item.active').index() + 2;
+                    $('.num').html(''+currentIndex_active+'/'+totalItems+'');
+                }
+            });
+
+                $(".prev").click(function(){
+                    down_index=down_index-1;
+                if (down_index >= 1 )
+                {
+                    $('.num').html(''+down_index+'/'+totalItems+'');
+                }
+            });
+    
+</script>
+</body>
+</html>
