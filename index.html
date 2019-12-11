@@ -109,23 +109,31 @@
         }
         a.carousel-control-prev{
             position: relative;
-            top: -40px;
+            top: -45px;
             left:170px;
-            width: 12.69px;
+            width: 20.69px;
+            /* width: 12.69px;
             border: 1px solid white;
-            border-width: 100%;
+            border-width: 100%; */
             /* border-radius: 50%; */
             
 
         }
         a.carousel-control-next{
             position: relative;
-            top: -62px;
-            left: 190px;
-            width: 12.69px;
-            border: 1px solid white;
-            border-width: 100%;
+            top: -65px;
+            left: 210px;
+            width: 20.69px;
+          
             
+        }
+     
+
+        .carousel-control-prev-icon {
+            background-image: url("assets/images/controls/left.svg");
+        }
+        .carousel-control-next-icon {
+            background-image: url("assets/images/controls/right.svg");
         }
         .carousel-content {
             position: absolute;
@@ -170,18 +178,16 @@
             top: -63px;
             left:170px;
             width: 12.69px;
-            border: 1px solid white;
-            border-width: 100%;
+          
             /* border-radius: 50%; */
         
         }
         a.carousel-control-next{
             position: relative;
-            top: -85px;
-            left: 190px;
+            top: -83px;
+            left: 210px;
             width: 12.69px;
-            border: 1px solid white;
-            border-width: 100%;
+          
             
         }
         }
@@ -419,10 +425,10 @@
         </div>
     </nav>
         <section class="home-section home-parallax home-fade home-full-height" >
-                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" >
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
                         <div class="carousel-inner" role="listbox">
                         <!-- Slide One - Set the background image for this slide in the line below -->
-                        <div class="carousel-item item active  bg-gradient " style="background-image: url('assets/images/backgrounds/section-01.png')">
+                        <div class="carousel-item item active  bg-dark bg-gradient " style="background-image: url('assets/images/backgrounds/section-01.png')">
                             <div class="titan-caption">
                                     <div class=" caption-content">
                                         <div class="row partner-intro">
@@ -679,18 +685,19 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
                                     </p>
                             </div>
-                            <div class="row pt-5">
-                                    <div class="col-md-6 text-center" >
-                                            <div class="contact-box">
+
+                                    <div class="row pt-5">
+                                            <div class="col-md-6 text-center" >
+                                                    <div class="contact-box">
+                                                    </div>
                                             </div>
-                                           
-                                    </div>
-                                    <div class="col-md-6 text-center" >
-                                            <div class="contact-box">
+                                            <div class="col-md-6 text-center" >
+                                                    <div class="contact-box">
+                                                    </div>
+                                                   
                                             </div>
-                                           
                                     </div>
-                            </div>
+                    </div>
               </section>
                         
         </div>
