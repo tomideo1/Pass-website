@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f29298b-a7c3-420b-835f-b6d908cb6dbe" name="Default Changelist" comment="" />
+    <list default="true" id="3f29298b-a7c3-420b-835f-b6d908cb6dbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,21 +21,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="303" column="7" selection-start-line="303" selection-start-column="7" selection-end-line="303" selection-end-column="7" />
+            <state relative-caret-position="179">
+              <caret line="294" column="41" lean-forward="true" selection-start-line="294" selection-start-column="41" selection-end-line="294" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#nav#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#nav#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#2;n#ul#1;n#div#0;n#nav#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#11842#11847#0" expanded="true" />
-                <element signature="e#12860#12865#0" expanded="true" />
-                <element signature="e#13374#13379#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="2936" selection-start-line="2936" selection-end-line="2936" />
+            <state relative-caret-position="70320">
+              <caret line="2930" selection-start-line="2930" selection-end-line="2930" />
             </state>
           </provider>
         </entry>
@@ -60,6 +54,9 @@
       <find>display</find>
       <find>50%</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -109,8 +106,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/vectors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../artgidi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -146,11 +144,12 @@
       <workItem from="1575145020437" duration="16937000" />
       <workItem from="1575558020401" duration="11655000" />
       <workItem from="1575760186816" duration="4718000" />
+      <workItem from="1576256271833" duration="256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33310000" />
+    <option name="totallyTimeSpent" value="33566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1378" height="773" extended-state="0" />
@@ -215,13 +214,6 @@
     <entry file="file://$PROJECT_DIR$/assets/images/vector/la.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="2936" selection-start-line="2936" selection-end-line="2936" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/lib/bootstrap/dist/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
@@ -264,22 +256,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="303" column="7" selection-start-line="303" selection-start-column="7" selection-end-line="303" selection-end-column="7" />
+        <state relative-caret-position="179">
+          <caret line="294" column="41" lean-forward="true" selection-start-line="294" selection-start-column="41" selection-end-line="294" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#nav#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#nav#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#2;n#ul#1;n#div#0;n#nav#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#footer#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#11842#11847#0" expanded="true" />
-            <element signature="e#12860#12865#0" expanded="true" />
-            <element signature="e#13374#13379#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70320">
+          <caret line="2930" selection-start-line="2930" selection-end-line="2930" />
         </state>
       </provider>
     </entry>

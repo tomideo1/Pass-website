@@ -17,10 +17,8 @@ html {
 }
 
 body {
-  background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
-  color: #666;
-  -webkit-font-smoothing: antialiased;
+  color: white;
+  font-family: 'Crimson Text';
   overflow-x: hidden;
 }
 
@@ -2927,4 +2925,406 @@ Google map
   .works-grid-5 .work-item {
     width: 100%;
   }
+}
+
+
+
+
+/* PASS STYLE */
+
+#icons .navbar  ul{
+  list-style-type: none;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.red-line{
+  /*position: absolute;*/
+  width: 272px;
+  height: 0px;
+  /*left: 37px;*/
+  /*top: 505px;*/
+
+  border: 1px solid #FF0000;
+}
+.btn-round{
+  border-radius: 50%;
+}
+@media (max-width:1024px){
+  #separator{
+      display: none;
+  }
+
+
+}
+a {
+  outline: none;
+}
+#navbarTogglerDemo03 ul li a {
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: color 0.5s;
+}
+
+#navbarTogglerDemo03 ul li .underline {
+  height: 1px;
+  background-color: transparent;
+  width: 0%;
+  transition: width 0.2s, background-color 0.5s;
+  margin: -2 auto;
+}
+
+#navbarTogglerDemo03 ul li.nav-item.active-link .underline {
+  width: 30%;
+  background-color: red;
+}
+
+#navbarTogglerDemo03 ul li:hover .underline {
+  background-color: red;
+  width: 30%;
+
+}
+.navbar { box-shadow: none !important; }
+.button { box-shadow: none !important; }
+#navbarTogglerDemo03 ul li:active a {
+  transition: none;
+  color: red;
+
+}
+
+#navbarTogglerDemo03 ul li:active .underline {
+  transition: none;
+  color: red;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+a.carousel-control-prev{
+  position: relative;
+  top: -30px;
+  left:175px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background: transparent;
+  /*display: inline-block;*/
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  /* width: 12.69px;
+  border: 1px solid white;
+  border-width: 100%; */
+  /* border-radius: 50%; */
+  
+
+}
+a.carousel-control-next{
+  position: relative;
+  top: -65px;
+  left: 220px;
+  width: 20.69px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background: transparent;
+  /*display: inline-block;*/
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+
+  
+}
+
+
+.carousel-control-prev-icon {
+  background-image: url("/assets/images/vector/left.png");
+  width: 40px;
+
+}
+.carousel-control-next-icon {
+  background-image: url("/assets/images/vector/right.png");
+}
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.caption-content{
+  position: relative; top: 250px;
+  font-family:'Crimson Text'; 
+}
+.caption-content .partner-intro{
+  font-size:62px;
+
+}
+.caption-content .partner-logo{
+  width: 84px; height: 84px;
+}
+.caption-content footer a.btn {
+      padding: 50px;
+}
+
+@media (any-pointer:coarse) { 
+.caption-content  {
+  position: relative;
+  top: 120px;
+
+}
+.caption-content .partner-logo{
+  width: 54px; height: 54px;
+}
+.caption-content .partner-intro{
+  font-size:42px;
+
+}
+.caption-content footer a.btn {
+  padding: 15px;
+}
+a.carousel-control-prev{
+position: relative;
+top: -63px;
+left:170px;
+width: 12.69px;
+}
+
+/* border-radius: 50%; */
+a.carousel-control-next{
+  position: relative;
+  top: -83px;
+  left: 210px;
+  width: 12.69px;
+}
+
+}
+.featured{
+   font-family:'Crimson Text';
+   font-size: 14px;
+   letter-spacing: 5px;
+    margin-left: 10px;
+}
+
+a.btn{
+  background: #FF0000;
+}
+
+#about{
+  position: relative;
+  padding-bottom: 140px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #131313;
+}
+#about h5.small-header {
+  font-family: 'Avenir LT Std';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.355em;
+  padding-top: 100px;
+}
+  #about .text-paragraph {
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 224.18%;
+  /* or 40px */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#showcase{
+  padding-bottom: 140px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: white;
+  color: #000000;
+}
+#showcase h5.small-header {
+  font-family: 'Avenir LT Std';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.355em;
+  padding-top: 100px;
+}
+.partner{
+  width: 195px;
+  height: 195px;
+  border: 1px solid #FF0000;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.partner-title{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #000000;
+  
+}
+.partner-title .line{
+  width: 60px;
+  height: 0px;
+  padding: 0 auto;
+  display: inline-block;
+  border: 1px solid #FF0000;
+}
+
+.partner:hover:hover{
+  border: 5px solid #FF0000;
+  box-sizing: border-box;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#works{
+  padding-bottom: 140px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #313030;
+  color: #000000;
+}
+
+
+/* Create four equal columns that sits next to each other */
+.row {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
+padding: 0;
+}
+.column {
+-ms-flex: 25%; /* IE10 */
+flex: 25%;
+max-width: 40%;
+padding: 0px;
+}
+
+.column img {
+vertical-align: middle;
+width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.column {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
+}
+.parallax-text{
+font-family: Crimson Text;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 185.18%;
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+#contact{
+  padding-bottom: 140px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #313030;
+  color: white;
+}
+#contact h5.small-header {
+  font-family: 'Avenir LT Std';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.355em;
+  padding-top: 100px;
+}
+.contact-box{
+  width:inherit;
+  height: 500px;
+  border: 1px solid #FF0000;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Crimson Text;
+}
+.contact-box p{
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 87px;
+  /* identical to box height */
+
+  text-align: center;
+
+}
+
+
+@media (any-pointer:coarse) {
+  .contact-box p {
+    font-size: 32px;
+  }
+}
+
+.contact- label{
+font-family: Crimson Text;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+
+color: #5A5A5A;
 }
