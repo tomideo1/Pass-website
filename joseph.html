@@ -10,35 +10,31 @@
   =============================================
 
   -->
-   
-  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Template specific stylesheets-->
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crimson+Text" />
-  <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
-  <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-  <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crimson+Text" />
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- Main stylesheet and color file-->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
     <style>
         body {
             color: white;
             font-family: 'Crimson Text';
             overflow-x: hidden;
-            background-image: url("assets/images/backgrounds/backdrop.png");
-            background-size: cover;
+            overflow-y: hidden;
         }
     </style>
 </head>
 
-<body data-target=".onpage-navigation" data-offset="60" id="home">
+<body>
     <main>
         <div class="page-loader">
             <div class="loader">Loading...</div>
         </div>
-        <nav class="navbar  navbar-expand-sm navbar-custom navbar-transparent  one-page" role="navigation">
+        <nav class="navbar  navbar-expand-sm navbar-custom navbar-transparent fixed-top one-page" role="navigation">
             <a class="navbar-brand pl-5 mt-3 mr-lg-5 mr-auto " href="/index.html">
                 <img class="pass-logo" src="assets/images/Logo/pass.png">
             </a>
@@ -85,7 +81,8 @@
                 </ul>
             </div>
         </nav>
-        <section class class="home-section home-parallax home-fade w-100 h-100" style="margin-top: -100px;">
+        <section class="home-section home-parallax home-fade h-100"
+            data-background="assets/images/backgrounds/backdrop.png">
             <div class="module text-center">
                 <div class="container">
                     <h6 class="page-title">SHOWCASE</h6>
@@ -97,65 +94,71 @@
                         Nullam volutpat nec orci vitae accumsan. Maecenas eros odio, tristique quis mi eu,
                         condimentum aliquet tortor.</p>
                 </div>
+                <div class="d-flex flex-row bd-highlight">
+                    <div class=" bd-highlight">
+                        <div class="partner-box" style="background-image: url('/assets/images/partners/partner1.png');">
+                            <div class="layer"></div>
+                            <img src="/assets/images/partners/partner-1logo.png" class="mx-auto pt-50 mt-5">
+                        </div>
+                    </div>
+                    <div class="bd-highlight">
+                        <div class="partner-box" style="background-image: url('/assets/images/partners/partner2.png');">
+                            <div class="layer"></div>
+                            <img src="/assets/images/partners/partner2logo.png" class="pt-50 mt-5">
+                        </div>
+                    </div>
+                    <div class="bd-highlight">
+                        <div class="partner-box" style="background-image: url('/assets/images/partners/partner3.png');">
+                            <div class="layer"></div>
+                            <img src="/assets/images/partners/partner3logo.png" class="pt-50 mt-5">
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <div class="partner-box" style="background-image: url('/assets/images/partners/partner4.png');">
+                            <div class="layer"></div>
+                            <div class="layer"></div>
+                            <img src="/assets/images/partners/partner4logo.png" class="pt-50 mt-5">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class=" bd-highlight">
+                        <div class="partner-box" style="background-image: url('/assets/images/partners/partner3.png');">
+                            <div class="layer"></div>
+                            <img src="/assets/images/partners/partnerlogo5.png" class="mx-auto pt-50 mt-5">
+                        </div>
+                    </div>
+                    <div class="bd-highlight">
+                        <div class="partner-box" style="background-image: url('/assets/images/partners/partner4.png');">
+                            <div class="layer"></div>
+                            <img src="/assets/images/partners/partnerlogo6.png" class="pt-50 mt-5">
+                        </div>
+                    </div>
+                    <div class="bd-highlight">
+                        <div class="partner-box" style="background-image: url('/assets/images/partners/partner2.png');">
+                            <div class="layer"></div>
+                            <img src="/assets/images/partners/logo 1.png" class="pt-50 mt-5">
+                        </div>
+                    </div>
+                    <div class=" bd-highlight">
+                        <div class="partner-box" style="background-image: url('/assets/images/partners/partner1.png');">
+                            <div class="layer"></div>
+                            <div class="layer"></div>
+                            <img src="/assets/images/partners/logo (1) 2.png" class="pt-50 mt-5">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             </div>
         </section>
-       <div class="main">
-        <section class="w-100"  style="background-size: cover; background-image: url('assets/images/backgrounds/backdrop.png');">
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="card-deck">
-                    <div class="partner-box" style="background-image: url('/assets/images/partners/partner1.png');">
-                        <div class="layer"></div>
-                        <img src="/assets/images/partners/partner-1logo.png" class="mx-auto">
-                    </div>
-                    <div class="partner-box" style="background-image: url('/assets/images/partners/partner2.png');">
-                        <div class="layer"></div>
-                        <img src="/assets/images/partners/partner2logo.png" >
-                    </div>
-                    <div class="partner-box" style="background-image: url('/assets/images/partners/partner3.png');">
-                        <div class="layer"></div>
-                        <img src="/assets/images/partners/partner3logo.png">
-                    </div>
-                    <div class="partner-box" style="background-image: url('/assets/images/partners/partner4.png');">
-                        <div class="layer"></div>
-                        <div class="layer"></div>
-                        <img src="/assets/images/partners/partner4logo.png">
-                    </div>
-                    <div class="partner-box" style="background-image: url('/assets/images/partners/partner3.png');">
-                        <div class="layer"></div>
-                        <img src="/assets/images/partners/partnerlogo5.png">
-                    </div>
-                    <div class="partner-box" style="background-image: url('/assets/images/partners/partner4.png');">
-                        <div class="layer"></div>
-                        <img src="/assets/images/partners/partnerlogo6.png" >
-                    </div>
-                    <div class="partner-box" style="background-image: url('/assets/images/partners/partner2.png');">
-                        <div class="layer"></div>
-                        <img src="/assets/images/partners/logo 1.png" >
-                    </div>
-                    <div class="partner-box" style="background-image: url('/assets/images/partners/partner1.png');">
-                        <div class="layer"></div>
-                        <img src="/assets/images/partners/logo (1) 2.png" >
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-       </div>
     </main>
     <script src="assets/lib/jquery/dist/jquery.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/lib/wow/dist/wow.js"></script>
-    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
-    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/mdb.min.js"></script>
 
 </body>
 

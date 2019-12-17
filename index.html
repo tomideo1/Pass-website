@@ -11,6 +11,7 @@
 
   -->
     <!-- Default stylesheets-->
+
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template specific stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crimson+Text" />
@@ -21,7 +22,6 @@
 
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/mdb.min.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
     <style>
         body {
@@ -400,25 +400,21 @@
                                     <div class="container">
                                         <form class="text-center p-4">
                                             <!-- Name -->
-                                            <div class="md-form">
-                                                <input type="text" id="materialSubscriptionFormPasswords"
-                                                    class="form-control ">
-                                                <label for="materialSubscriptionFormPasswords"
-                                                    class="mt-n3">Name</label>
-                                            </div>
+                                            <div class="form-group">
+                                                <input required="required" type="text"></input>
+                                                <label for="textarea" class="control-label mt-n2">Name</label><i class="bar"></i>
+                                              </div>
 
                                             <!-- E-mai -->
-                                            <div class="md-form mt-5">
-                                                <input type="email" id="materialSubscriptionFormEmail"
-                                                    class="form-control">
-                                                <label for="materialSubscriptionFormEmail" class="mt-n3">Email</label>
-                                            </div>
+                                            <div class="form-group mt-5">
+                                                <input required="required" type="email"></input>
+                                                <label for="textarea" class="control-label mt-n3">Email</label><i class="bar"></i>
+                                              </div>
 
-                                            <div class="md-form" style="position: relative; top: 120px;">
-                                                <input type="text" id="materialSubscriptionFormEmail"
-                                                    class="form-control">
-                                                <label for="materialSubscriptionFormEmail" class="mt-n3">Message</label>
-                                            </div>
+                                              <div class="form-group" style="position: relative; top: 120px;">
+                                                <input required="required"></input>
+                                                <label for="textarea" class="control-label mt-n2">Message</label><i class="bar"></i>
+                                              </div>
 
                                         </form>
                                     </div>
@@ -444,20 +440,20 @@ JavaScripts
 =============================================
 -->
 
-<script src="assets/lib/jquery/dist/jquery.js"></script>
-<script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/lib/wow/dist/wow.js"></script>
-<script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-<script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
-<script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-<script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-<script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-<script src="assets/lib/smoothscroll.js"></script>
-<script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-<script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/mdb.min.js"></script>
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mdb.min.js"></script>
 
     <script>
         $('.nav-item').on('click', function () {
