@@ -11,510 +11,581 @@
 
   -->
     <!-- Default stylesheets-->
-
-    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template specific stylesheets-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crimson+Text" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crimson+Text"/>
     <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
     <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
-    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
     <link rel="stylesheet" href="carousel/docs/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="carousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
     <link href="assets/css/animate.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
-
     <link href="assets/css/style.css" rel="stylesheet">
-
     <style>
         body {
             color: white;
             font-family: 'Crimson Text';
             overflow-x: hidden;
         }
+
     </style>
 </head>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+<main>
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <nav class="navbar  navbar-expand-sm navbar-custom navbar-transparent fixed-top one-page" role="navigation">
+        <a class="navbar-brand pl-5 mt-3 mr-lg-5 mr-auto " href="/index.html">
+            <img class="pass-logo" src="assets/images/Logo/pass.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars text-white"></i></span>
+        </button>
 
-<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60" id="home">
-    <main>
-        <div class="page-loader">
-            <div class="loader">Loading...</div>
+        <div class="navbar-collapse collapse" id="navbarTogglerDemo03" data-hover="dropdown"
+             data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" aria-expanded="true" style="">
+            <ul class="navbar-nav navbar-right mr-auto mt-4 mt-lg-2  text-uppercase ">
+                <li class="nav-item active-link">
+                    <a class="nav-link  text-white" href="/index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                    <div class="underline mr-lg-5 d-none d-lg-block d-md-block"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white section-scroll" href="#about">About</a>
+                    <div class="underline mr-lg-5 d-none d-lg-block d-md-block "></div>
+                </li>
+                <li class=" nav-item dropdown"><a class="nav-link " href="#" data-toggle="dropdown">Studio</a>
+                    <div class="underline mr-lg-5 d-none d-lg-block d-md-block mb-3"></div>
+                    <ul class="dropdown-menu" style="background: #FF0000;">
+                        <li class="dropdown">
+                            <a class="pl-3 pr-3  dropdown-toggled" href="#" data-toggle="dropdown"
+                            >Bathroom
+                                <span class="fa fa-caret-right float-right"></span>
+                            </a>
+                            <ul class="dropdown-menu mt-3">
+                                <li class="dropdown">
+                                    <a class="pl-3 pr-3  dropdown-toggled" data-toggle="dropdown">
+                                    Bath Systems
+                                    <span class="fa fa-caret-right float-right"></span>
+                                </a>
+                                    <ul class="dropdown-menu mt-3">
+                                        <li><a class="pl-3 pr-3 ">
+                                            Bath Tubs
+                                        </a>
+                                        </li>
+                                        <li><a class="pl-3 pr-3 ">
+                                            Cubicles
+                                        </a>
+                                        </li>
+                                        <li><a class="pl-3 pr-3 ">
+                                            Jets
+                                        </a>
+                                        </li>
+                                        <li><a class="pl-3 pr-3 ">
+                                            Mixers
+                                        </a>
+                                        </li>
+                                        <li><a class="pl-3 pr-3 ">
+                                            Showers
+                                        </a>
+                                        </li>
+                                        <li><a class="pl-3 pr-3 ">
+                                            Spouts
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="pl-3 pr-3  dropdown-toggled">
+                                    Furnitures
+                                    <span class="fa fa-caret-right float-right"></span>
+                                </a>
+                                </li>
+                                <li><a class="pl-3 pr-3  dropdown-toggled">
+                                   Saunas
+                                    <span class="fa fa-caret-right float-right"></span>
+
+                                </a>
+                                </li>
+                                <li><a class="pl-3 pr-3  dropdown-toggled">
+                                    Taps
+                                    <span class="fa fa-caret-right float-right"></span>
+
+                                </a>
+                                </li>
+                                <li><a class="pl-3 pr-3  dropdown-toggled">
+                                    Wash Basins
+                                    <span class="fa fa-caret-right float-right"></span>
+
+                                </a>
+                                </li>
+                                <li><a class="pl-3 pr-3  dropdown-toggled">
+                                    Water Closets
+                                    <span class="fa fa-caret-right float-right"></span>
+
+                                </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li ><a class="pl-3 pr-3 dropdown-toggled" href="#" >Doors</a></li>
+                        <li class="dropdown"><a class="pl-3 pr-3 dropdown-toggled" href="#" data-toggle="dropdown"
+                        >Kitchen
+                            <span class="fa fa-caret-right float-right"></span>
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index_mp_fullscreen_video_background.html">Organization</a></li>
+                                <li><a href="index_mp_classic_video_background.html">Utensils</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="pl-3 pr-3 dropdown-toggled" href="#" data-toggle="dropdown">
+                            Scents
+                            <span class="fa fa-caret-right float-right"></span>
+
+                        </a>
+                            <ul class="dropdown-menu mt-md-n4">
+                                <li><a href="index_mp_fullscreen_text_rotator.html">Candles</a></li>
+                                <li><a href="index_mp_classic_text_rotator.html">Diffusers</a></li>
+                                <li><a href="index_mp_classic_text_rotator.html">Fabric Sprays</a></li>
+                                <li><a href="index_mp_classic_text_rotator.html">Fragrances</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="pl-3 pr-3 dropdown-toggled" href="#" data-toggle="dropdown">
+                            Storage
+                            <span class="fa fa-caret-right float-right"></span>
+
+                        </a>
+                            <ul class="dropdown-menu mt-md-n4">
+                                <li><a href="index_mp_fullscreen_gradient_overlay.html">Decanters</a></li>
+                                <li><a href="index_mp_classic_gradient_overlay.html">Food & Drink</a></li>
+                                <li><a href="index_mp_classic_gradient_overlay.html">Recycle Bin</a></li>
+                                <li><a href="index_mp_classic_gradient_overlay.html">Refill Bottles</a></li>
+                            </ul>
+                        </li>
+                        <li ><a class="pl-3 pr-3 dropdown-toggled" href="#" data-toggle="dropdown">Tiles</a></li>
+                    </ul>
+                </li>
+                <li class=" nav-item dropdown"><a class="nav-link " href="#" data-toggle="dropdown">Brands</a>
+                    <div class="underline mr-lg-5 d-none d-lg-block d-md-block mb-3"></div>
+                    <ul class="dropdown-menu" style="background: #FF0000;">
+                        <li ><a class="pl-3 pr-3  dropdown-toggled" href="#">Cristina</a></li>
+                        <li ><a class="pl-3 pr-3  dropdown-toggled" href="#">DIBI SECUREZZA & DESIGN</a></li>
+                        <li ><a class="pl-3 pr-3  dropdown-toggled" href="#">GRUPPO GEROMIN</a></li>
+                        <li ><a class="pl-3 pr-3  dropdown-toggled" href="#">JOSEPH JOSEPH</a></li>
+                        <li ><a class="pl-3 pr-3  dropdown-toggled" href="#">PROGRESS PROFILES</a></li>
+                        <li ><a class="pl-3 pr-3  dropdown-toggled" href="#">SONIA</a></li>
+                        <li ><a class="pl-3 pr-3  dropdown-toggled" href="#">THE.ARTCERAM</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white section-scroll" href="#contact">Contact</a>
+                    <div class="underline mr-lg-5 d-none d-lg-block d-md-block "></div>
+                </li>
+            </ul>
         </div>
-        <nav class="navbar  navbar-expand-sm navbar-custom navbar-transparent fixed-top one-page" role="navigation">
-            <a class="navbar-brand pl-5 mt-3 mr-lg-5 mr-auto " href="/index.html">
-                <img class="pass-logo" src="assets/images/Logo/pass.png">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fa fa-bars text-white"></i></span>
-            </button>
+    </nav>
 
-            <div class="navbar-collapse collapse in" id="navbarTogglerDemo03" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" aria-expanded="true" style="">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Active Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="kopie"><a href="#">Dropdown</a></li>
-                            <li><a href="#">Dropdown Link 1</a></li>
-                            <li class="active"><a href="#">Dropdown Link 2</a></li>
-                            <li><a href="#">Dropdown Link 3</a></li>
-                            <li class="dropdown dropdown-submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 4</a>
-                                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">Dropdown Link 4</a></li>
-                                    <li><a href="#">Dropdown Submenu Link 4.1</a></li>
-                                    <li><a href="#">Dropdown Submenu Link 4.2</a></li>
-                                    <li><a href="#">Dropdown Submenu Link 4.3</a></li>
-                                    <li><a href="#">Dropdown Submenu Link 4.4</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown dropdown-submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 5</a>
-                                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
-                                    <li><a href="#">Dropdown Submenu Link 5.1</a></li>
-                                    <li><a href="#">Dropdown Submenu Link 5.2</a></li>
-                                    <li><a href="#">Dropdown Submenu Link 5.3</a></li>
-                                    <li class="dropdown dropdown-submenu">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="kopie"><a href="#">Dropdown Submenu Link 5.4</a></li>
-                                            <li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
-                                            <li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li class="kopie"><a href="#">Dropdown2</a></li>
-                            <li><a href="#">Dropdown2 Link 1</a></li>
-                            <li><a href="#">Dropdown2 Link 2</a></li>
-                            <li><a href="#">Dropdown2 Link 3</a></li>
-                            <li class="dropdown dropdown-submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 4</a>
-                                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">Dropdown2 Link 4</a></li>
-                                    <li><a href="#">Dropdown2 Submenu Link 4.1</a></li>
-                                    <li><a href="#">Dropdown2 Submenu Link 4.2</a></li>
-                                    <li><a href="#">Dropdown2 Submenu Link 4.3</a></li>
-                                    <li><a href="#">Dropdown2 Submenu Link 4.4</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown dropdown-submenu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 5</a>
-                                <ul class="dropdown-menu">
-                                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
-                                    <li><a href="#">Dropdown2 Submenu Link 5.1</a></li>
-                                    <li><a href="#">Dropdown2 Submenu Link 5.2</a></li>
-                                    <li><a href="#">Dropdown2 Submenu Link 5.3</a></li>
-                                    <li class="dropdown dropdown-submenu">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="kopie"><a href="#">Dropdown2 Submenu Link 5.4</a></li>
-                                            <li><a href="#">Dropdown2 Submenu Link 5.4.1</a></li>
-                                            <li><a href="#">Dropdown2 Submenu Link 5.4.2</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+    <section class="home-section"
+             style="background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);">
+        <div class="slide-progress"></div>
+        <div class="owl-carousel owl-theme">
+            <div class=" item "
+                 style="background: linear-gradient(-230deg, #000000 1.22%, rgba(0, 0, 0, 0) 142.22%),url('assets/images/backgrounds/section-01.png');">
+                <div class="owl-caption">
+                    <div class="container-fluid ml-lg-4 ml-md-4 ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png"
+                                     style="width: 84px; height: 84px">
+                            </div>
+                            <div class="col-md-12 mt-2 header-title">
+                                <div class=" pull-left border-bottom-red">Comfort & Design</div>
+                            </div>
+                            <div class="col-md-8 text-justify mt-3 ">
+                                        <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat
+                                            nec orci vitae accumsan.
+                                        </span>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="featured">
+                                <p class=" mt-5 ml-3 "
+                                   style="font-family:'Crimson Text'; letter-spacing: 5px; ">
+                                    FEATURED
+                                </p>
+                            </div>
+                            <a class=" btn ml-auto pull-right mt-4 " style="background-color: #FF0000; color: #ffffff;"
+                               href="#showcase">
+                                <div class="d-flex flex-row mr-5">
+                                    <p class="p-2 col-6 mt-3 mr-2 ">GO TO STUDIO </p>
+                                    <img src="assets/vectors/arrow.svg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <section class="home-section" style="background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);">
-            <div class="slide-progress"></div>
-            <div class="owl-carousel owl-theme" >
-                <div class=" item " style="background: linear-gradient(-230deg, #000000 1.22%, rgba(0, 0, 0, 0) 142.22%),url('assets/images/backgrounds/section-01.png');" >
-                    <div class="owl-caption" >
-                      <div class="container-fluid ml-lg-4 ml-md-4 ">
-                          <div class="row" >
-                              <div class="col-md-12">
-                                  <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png" style="width: 84px; height: 84px">
-                              </div>
-                              <div class="col-md-12 mt-2 header-title">
-                                  <div class=" pull-left border-bottom-red">Comfort & Design</div>
-                              </div>
-                              <div class="col-md-8 text-justify mt-3 ">
+            <div class=" item "
+                 style="background: linear-gradient(-230deg, #000000 1.22%, rgba(0, 0, 0, 0) 142.22%),url('assets/images/backgrounds/section-01.png');">
+                <div class="owl-caption">
+                    <div class="container-fluid ml-lg-4 ml-md-4 ">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png"
+                                     style="width: 84px; height: 84px">
+                            </div>
+                            <div class="col-md-12 mt-2 header-title">
+                                <div class=" pull-left border-bottom-red">Comfort & Design</div>
+                            </div>
+                            <div class="col-md-8 text-justify mt-3 ">
                                         <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat
                                             nec orci vitae accumsan.
                                         </span>
-                              </div>
+                            </div>
 
-                          </div>
-                          <div class="row">
-                              <div class="featured">
-                                  <p class=" mt-5 ml-3 "
-                                     style="font-family:'Crimson Text'; letter-spacing: 5px; ">
-                                      FEATURED
-                                  </p>
-                              </div>
-                              <a class=" btn ml-auto pull-right mt-4 " style="background-color: #FF0000; color: #ffffff;" href="#showcase">
-                                  <div class="d-flex flex-row mr-5">
-                                      <p class="p-2 col-6 mt-3 mr-2 ">GO TO STUDIO </p>
-                                      <img  src="assets/vectors/arrow.svg">
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
+                        </div>
+                        <div class="row">
+                            <div class="featured">
+                                <p class=" mt-5 ml-3 "
+                                   style="font-family:'Crimson Text'; letter-spacing: 5px; ">
+                                    FEATURED
+                                </p>
+                            </div>
+                            <a class=" btn ml-auto pull-right mt-4 " style="background-color: #FF0000; color: #ffffff;"
+                               href="#showcase">
+                                <div class="d-flex flex-row mr-5">
+                                    <p class="p-2 col-6 mt-3 mr-2 ">GO TO STUDIO </p>
+                                    <img src="assets/vectors/arrow.svg">
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    </div>
-                <div class=" item " style="background: linear-gradient(-230deg, #000000 1.22%, rgba(0, 0, 0, 0) 142.22%),url('assets/images/backgrounds/section-01.png');" >
-                    <div class="owl-caption" >
-                      <div class="container-fluid ml-lg-4 ml-md-4 ">
-                          <div class="row" >
-                              <div class="col-md-12">
-                                  <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png" style="width: 84px; height: 84px">
-                              </div>
-                              <div class="col-md-12 mt-2 header-title">
-                                  <div class=" pull-left border-bottom-red">Comfort & Design</div>
-                              </div>
-                              <div class="col-md-8 text-justify mt-3 ">
-                                        <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat
-                                            nec orci vitae accumsan.
-                                        </span>
-                              </div>
-
-                          </div>
-                          <div class="row">
-                              <div class="featured">
-                                  <p class=" mt-5 ml-3 "
-                                     style="font-family:'Crimson Text'; letter-spacing: 5px; ">
-                                      FEATURED
-                                  </p>
-                              </div>
-                              <a class=" btn ml-auto pull-right mt-4 " style="background-color: #FF0000; color: #ffffff;" href="#showcase">
-                                  <div class="d-flex flex-row mr-5">
-                                      <p class="p-2 col-6 mt-3 mr-2 ">GO TO STUDIO </p>
-                                      <img  src="assets/vectors/arrow.svg">
-                                  </div>
-                              </a>
-                          </div>
-                      </div>
-                    </div>
-                    </div>
-
                 </div>
-            <span id="counter" ></span>
-        </section>
-        <div class="main">
-            <section class="text-center mt-n4" id="about">
-                <div class="container">
-                    <h5 class="small-header">ABOUT US</h5>
-                    <h1 class="jumbotron-heading mt-2 pb-2">Who We Are</h1>
-                    <div class="red-line"
-                        style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
-                    <p class="lead text-paragraph mt-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae
-                        accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor. Vestibulum ante
-                        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque ac elit
-                        lacus. Quisque ullamcorper erat sem, non tincidunt sapien mattis vel. Sed laoreet sagittis erat
-                        eget posuere. Donec placerat mauris a ex tristique, laoreet maximus ante consectetur. Fusce
-                        ornare venenatis vehicula. Donec pharetra consectetur risus. Nulla nec tincidunt lectus.
-                    </p>
+            </div>
 
-                </div>
-                <button class=" btn p-5 pull-right mt-4"
+        </div>
+        <span id="counter"></span>
+    </section>
+    <div class="main">
+        <section class="text-center mt-n4" id="about">
+            <div class="container">
+                <h5 class="small-header">ABOUT US</h5>
+                <h1 class="jumbotron-heading mt-2 pb-2">Who We Are</h1>
+                <div class="red-line"
+                     style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
+                <p class="lead text-paragraph mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae
+                    accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor. Vestibulum ante
+                    ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque ac elit
+                    lacus. Quisque ullamcorper erat sem, non tincidunt sapien mattis vel. Sed laoreet sagittis erat
+                    eget posuere. Donec placerat mauris a ex tristique, laoreet maximus ante consectetur. Fusce
+                    ornare venenatis vehicula. Donec pharetra consectetur risus. Nulla nec tincidunt lectus.
+                </p>
+
+            </div>
+            <button class=" btn p-5 pull-right mt-4"
                     style="background-color: #FF0000; color: #ffffff;" href="#showcase">READ MORE
-                    <span
+                <span
                         class="ml-2 pt-3">
                         <img src="assets/vectors/arrow.svg"></span>
-                </button>
-            </section>
-            <section id="showcase">
-                <div class="container">
-                    <div class="text-center">
-                        <h5 class="small-header">OUR PARTNERS</h5>
-                        <h1 class="jumbotron-heading mt-2 pb-2">Take a Look for Yourself</h1>
-                        <div class="red-line"
-                            style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
-                        <p class="lead text-paragraph mt-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae
-                            accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 text-center">
-                            <div class="partner p-3">
-                                <img class="mx-auto " src="/assets/images/partners/Vector (3).png"
-                                    style="display: block;">
-                            </div>
-                            <div class="partner-title align-items-center justify-content-center">
-                                <p class="mt-2">Joseph Joseph</p>
-                                <div class=" line mt-n4"></div>
-                            </div>
+            </button>
+        </section>
+        <section id="showcase">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="small-header">OUR PARTNERS</h5>
+                    <h1 class="jumbotron-heading mt-2 pb-2">Take a Look for Yourself</h1>
+                    <div class="red-line"
+                         style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
+                    <p class="lead text-paragraph mt-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae
+                        accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div class="partner p-3">
+                            <img class="mx-auto " src="/assets/images/partners/Vector (3).png"
+                                 style="display: block;">
                         </div>
-                        <div class="col-md-3 text-center">
-                            <div class="partner p-3">
-                                <img  class="mx-auto " src="/assets/images/partners/progress-1.png"
-                                    style="display: block;">
-                            </div>
-                            <div class="partner-title">
-                                <p class="mt-2">Progress Profiles</p>
-                                <div class="line mt-n4"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <div class="partner p-3">
-                                <img class="mx-auto" src="/assets/images/partners/porte_blindate_dibi 1.png"
-                                    style="display: block;">
-                            </div>
-                            <div class="partner-title">
-                                <p class="mt-2">dibi Securezza & Design</p>
-                                <div class="line mt-n4"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <div class="partner p-3">
-                                <img class="mx-auto" src="/assets/images/partners/logo-trans-222x62bn 1.png"
-                                    style="display: block;">
-                            </div>
-                            <div class="partner-title">
-                                <p class="mt-2"> Sonia</p>
-                                <div class="line mt-n4"></div>
-                            </div>
+                        <div class="partner-title align-items-center justify-content-center">
+                            <p class="mt-2">Joseph Joseph</p>
+                            <div class=" line mt-n4"></div>
                         </div>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-md-3 text-center">
-                            <div class="partner p-3">
-                                <img class="mx-auto" src="/assets/images/partners/logo-geromin-new 2.png"
-                                    style="display: block;">
-                            </div>
-                            <div class="partner-title align-items-center justify-content-center">
-                                <p class="mt-2">Geromin Group</p>
-                                <div class=" line mt-n4"></div>
-                            </div>
+                    <div class="col-md-3 text-center">
+                        <div class="partner p-3">
+                            <img class="mx-auto " src="/assets/images/partners/progress-1.png"
+                                 style="display: block;">
                         </div>
-                        <div class="col-md-3 text-center">
-                            <div class="partner p-3">
-                                <img class="mx-auto " src="/assets/images/partners/logo (2) 1.png">
-                            </div>
-                            <div class="partner-title">
-                                <p class="mt-2">art ceramica</p>
-                                <div class="line mt-n4"></div>
-                            </div>
+                        <div class="partner-title">
+                            <p class="mt-2">Progress Profiles</p>
+                            <div class="line mt-n4"></div>
                         </div>
-                        <div class="col-md-3 text-center">
-                            <div class="partner p-3">
-                                <img class="mx-auto" src="/assets/images/partners/logo 1.png"
-                                    style="display: block;">
-                            </div>
-                            <div class="partner-title">
-                                <p class="mt-2">Marca Corona</p>
-                                <div class="line mt-n4"></div>
-                            </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="partner p-3">
+                            <img class="mx-auto" src="/assets/images/partners/porte_blindate_dibi 1.png"
+                                 style="display: block;">
                         </div>
-                        <div class="col-md-3 text-center">
-                            <div class="partner p-3">
-                                <img  src="/assets/images/partners/logo (1) 2.png"
-                                    style="display: block;">
-                            </div>
-                            <div class="partner-title">
-                                <p class="mt-2"> Cristina </p>
-                                <div class="line mt-n4"></div>
-                            </div>
+                        <div class="partner-title">
+                            <p class="mt-2">dibi Securezza & Design</p>
+                            <div class="line mt-n4"></div>
                         </div>
-
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="partner p-3">
+                            <img class="mx-auto" src="/assets/images/partners/logo-trans-222x62bn 1.png"
+                                 style="display: block;">
+                        </div>
+                        <div class="partner-title">
+                            <p class="mt-2"> Sonia</p>
+                            <div class="line mt-n4"></div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section id="works">
-                <div class="container-fluid">
-                    <div class="row d-flex justify-content-center pt-5">
-                        <div class="column">
-                            <img src="assets/images/works/home_01 1.png" style="width:100%">
-                            <img src="assets/images/works/2019-ethos-c-03 1.png" style="width:100%">
-                            <img src="assets/images/works/generated_SOU_PearlGrey_Bagno_P2.jpg 1.png"
-                                style="width:100%">
-                            <img src="assets/images/works/Sonia-Bathroom-Essence-07 1.png" style="width:100%">
-                            <img src="assets/images/works/DynamoRainbow 1.png" style="width:100%">
+                <div class="row mt-5">
+                    <div class="col-md-3 text-center">
+                        <div class="partner p-3">
+                            <img class="mx-auto" src="/assets/images/partners/logo-geromin-new 2.png"
+                                 style="display: block;">
                         </div>
-                        <div class="column">
-                            <img src="assets/images/works/generated_sou_pearlgrey_bagno_p1.jpg 1.png"
-                                style="width:100%">
-                            <img src="assets/images/works/1-overclay 1.png" style="width:100%">
-                            <img src="assets/images/works/Sonia-Bathroom-Essence-07 1.png" style="width:100%">
-                            <img src="assets/images/works/Storia (1) 1.png" style="width:100%">
-                            <img src="assets/images/works/generated_sou_pearlgrey_bagno.jpg 1.png" style="width:100%">
+                        <div class="partner-title align-items-center justify-content-center">
+                            <p class="mt-2">Geromin Group</p>
+                            <div class=" line mt-n4"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="partner p-3">
+                            <img class="mx-auto " src="/assets/images/partners/logo (2) 1.png">
+                        </div>
+                        <div class="partner-title">
+                            <p class="mt-2">art ceramica</p>
+                            <div class="line mt-n4"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="partner p-3">
+                            <img class="mx-auto" src="/assets/images/partners/logo 1.png"
+                                 style="display: block;">
+                        </div>
+                        <div class="partner-title">
+                            <p class="mt-2">Marca Corona</p>
+                            <div class="line mt-n4"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="partner p-3">
+                            <img src="/assets/images/partners/logo (1) 2.png"
+                                 style="display: block;">
+                        </div>
+                        <div class="partner-title">
+                            <p class="mt-2"> Cristina </p>
+                            <div class="line mt-n4"></div>
                         </div>
                     </div>
 
-            </section>
-            <section class="module parallax-bg" data-background="assets/images/backgrounds/Rectangle-20.png">
-                <div class="container">
-                    <div class="titan-caption">
-                        <p class="parallax-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae
-                            accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
-                        </p>
+                </div>
+            </div>
+        </section>
+        <section id="works">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center pt-5">
+                    <div class="column">
+                        <img src="assets/images/works/home_01 1.png" style="width:100%">
+                        <img src="assets/images/works/2019-ethos-c-03 1.png" style="width:100%">
+                        <img src="assets/images/works/generated_SOU_PearlGrey_Bagno_P2.jpg 1.png"
+                             style="width:100%">
+                        <img src="assets/images/works/Sonia-Bathroom-Essence-07 1.png" style="width:100%">
+                        <img src="assets/images/works/DynamoRainbow 1.png" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="assets/images/works/generated_sou_pearlgrey_bagno_p1.jpg 1.png"
+                             style="width:100%">
+                        <img src="assets/images/works/1-overclay 1.png" style="width:100%">
+                        <img src="assets/images/works/Sonia-Bathroom-Essence-07 1.png" style="width:100%">
+                        <img src="assets/images/works/Storia (1) 1.png" style="width:100%">
+                        <img src="assets/images/works/generated_sou_pearlgrey_bagno.jpg 1.png" style="width:100%">
                     </div>
                 </div>
-            </section>
-            <section id="contact">
+            </div>
+        </section>
+        <section class="module parallax-bg" data-background="assets/images/backgrounds/Rectangle-20.png">
+            <div class="container">
+                <div class="titan-caption">
+                    <p class="parallax-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae
+                        accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="small-header">CONTACT US</h5>
+                    <h1 class="jumbotron-heading mt-2 pb-2">GET IN TOUCH</h1>
+                    <div class="red-line"
+                         style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
+                    <p class="lead text-paragraph mt-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae
+                        accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
+                    </p>
+                </div>
                 <div class="container">
-                    <div class="text-center">
-                        <h5 class="small-header">CONTACT US</h5>
-                        <h1 class="jumbotron-heading mt-2 pb-2">GET IN TOUCH</h1>
-                        <div class="red-line"
-                            style="margin: 0 auto; display:flex; justify-content:space-around; float:none; "></div>
-                        <p class="lead text-paragraph mt-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat nec orci vitae
-                            accumsan. Maecenas eros odio, tristique quis mi eu, condimentum aliquet tortor.
-                        </p>
-                    </div>
-                    <div class="container">
-                        <div class="row pt-5">
-                            <div class="col-sm">
-                                <div class="contact-box text-center text-white">
-                                    <h6 class="pt-5 mb-3">CALL US NOW</h6>
-                                    <p> + 234 -1 - 4541234</p>
-                                    <p> +234- 8034855944 </p>
-                                </div>
+                    <div class="row pt-5">
+                        <div class="col-sm">
+                            <div class="contact-box text-center text-white">
+                                <h6 class="pt-5 mb-3">CALL US NOW</h6>
+                                <p> + 234 -1 - 4541234</p>
+                                <p> +234- 8034855944 </p>
                             </div>
-                            <div class="col-sm text-center text-white">
-                                <div class="contact-box">
-                                    <h6 class="pt-5 mb-3">CALL US NOW</h6>
-                                    <div class="container">
-                                        <form class="text-center p-4">
-                                            <!-- Name -->
-                                            <div class="form-group">
-                                                <input required="required" type="text" class="text-white"></input>
-                                                <label for="textarea" class="control-label mt-n2">Name</label><i class="bar"></i>
-                                              </div>
+                        </div>
+                        <div class="col-sm text-center text-white">
+                            <div class="contact-box">
+                                <h6 class="pt-5 mb-3">CALL US NOW</h6>
+                                <div class="container">
+                                    <form class="text-center p-4">
+                                        <!-- Name -->
+                                        <div class="form-group">
+                                            <input required="required" type="text" class="text-white"></input>
+                                            <label for="textarea" class="control-label mt-n2">Name</label><i
+                                                class="bar"></i>
+                                        </div>
 
-                                            <!-- E-mai -->
-                                            <div class="form-group mt-5">
-                                                <input required="required" type="email" class="text-white"></input>
-                                                <label for="textarea" class="control-label mt-n3">Email</label><i class="bar"></i>
-                                              </div>
+                                        <!-- E-mai -->
+                                        <div class="form-group mt-5">
+                                            <input required="required" type="email" class="text-white"></input>
+                                            <label for="textarea" class="control-label mt-n3">Email</label><i
+                                                class="bar"></i>
+                                        </div>
 
-                                              <div class="form-group" style="position: relative; top: 120px;">
-                                                <input type="text" required="required" class="text-white"></input>
-                                                <label for="textarea" class="control-label mt-n2">Message</label><i class="bar"></i>
-                                              </div>
+                                        <div class="form-group" style="position: relative; top: 120px;">
+                                            <input type="text" required="required" class="text-white"></input>
+                                            <label for="textarea" class="control-label mt-n2">Message</label><i
+                                                class="bar"></i>
+                                        </div>
 
-                                        </form>
-                                    </div>
-
+                                    </form>
                                 </div>
-                                <button class="section-scroll btn p-5 pull-right mt-4"
+
+                            </div>
+                            <button class="section-scroll btn p-5 pull-right mt-4"
                                     style="background-color: #FF0000; color: #ffffff;" href="#showcase">Send Message
-                                    <span class="ml-5 pt-3">
+                                <span class="ml-5 pt-3">
                                         <img src="assets/vectors/arrow.svg"></span>
-                                </button>
-                            </div>
-
+                            </button>
                         </div>
+
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        </div>
-        <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-    </main>
-    <!--
-JavaScripts
-=============================================
--->
-    <script src="assets/lib/jquery/dist/jquery.js"></script>
-    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/lib/smoothscroll.js"></script>
-    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="assets/js/main.js"></script>
-<!--    <script src="assets/js/mdb.min.js"></script>-->
-    <script src="assets/js/bootstrap-dropdownhover.min.js"></script>
-    <script src="carousel/docs/assets/owlcarousel/owl.carousel.js"></script>
-    <script>
-        $(window).on('load', function () {
-            $('.loader').fadeOut();
-            $('.page-loader').delay(350).fadeOut('slow');
-        });
-        $('.nav-item').on('click', function () {
-            $('.active-link').removeClass('active-link');
-            $(this).addClass('active-link');
-        });
-        var owl = $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            singleItem:true,
-            items:1,
-            dots:false,
-            autoplay:2000,
-            info:true,
-            autoplaySpeed:2000,
-            animateOut: 'bounceOut',
-            smartSpeed:450,
-            onInitialized  : counter, //When the plugin has initialized.
-            onTranslated : counter,
-            onTranslate: resetProgressBar,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
+    </div>
+    <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+</main>
+<script src="assets/lib/jquery/dist/jquery.js"></script>
+<script src="assets/bootstrap4/js/bootstrap.min.js"></script>
+<script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="assets/lib/wow/dist/wow.js"></script>
+<script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+<script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+<script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+<script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+<script src="assets/lib/smoothscroll.js"></script>
+<script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    $(window).on('load', function () {
+        $('.loader').fadeOut();
+        $('.page-loader').delay(350).fadeOut('slow');
+    });
+    $('.nav-item').on('click', function () {
+        $('.active-link').removeClass('active-link');
+        $(this).addClass('active-link');
+    });
+    var owl = $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        singleItem: true,
+        items: 1,
+        dots: false,
+        autoplay: 2000,
+        info: true,
+        autoplaySpeed: 2000,
+        animateOut: 'bounceOut',
+        smartSpeed: 450,
+        onInitialized: counter, //When the plugin has initialized.
+        onTranslated: counter,
+        onTranslate: resetProgressBar,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
             }
+        }
+    });
+
+    function counter(event) {
+        let element = event.target;         // DOM element, in this example .owl-carousel
+        let items = event.item.count;     // Number of items
+        let item = event.item.index + 1;     // Position of the current item
+
+        // it loop is true then reset counter from 1
+        if (item > items) {
+            item = item - items
+        }
+        startProgressBar();
+        $('#counter').html(item + " / " + items)
+    }
+
+    function startProgressBar() {
+        // apply keyframe animation
+        $(".slide-progress").css({
+            width: "100%",
+            transition: "width 5000ms"
+        });
+    }
+
+    function resetProgressBar() {
+        $(".slide-progress").css({
+            width: 0,
+            transition: "width 0s"
+        });
+    }
+
+    $('.dropdown-menu .dropdown-toggled').on('click', function () {
+
+        var $el = $(this);
+        var $parent = $el.offsetParent(".dropdown-menu");
+
+        if (!$el.next().hasClass("show")) {
+            $el.parents('.dropdown-menu').first().find(".show").removeClass("show");
+        }
+        $el.next(".dropdown-menu").toggleClass("show").parent("li").toggleClass("show");
+
+        $el.parents("li.nav-item.dropdown.show").on("hidden.bs.dropdown", function () {
+            $(".dropdown-menu .show").removeClass("show");
         });
 
-        function counter(event) {
-            let element   = event.target;         // DOM element, in this example .owl-carousel
-            let items     = event.item.count;     // Number of items
-            let item      = event.item.index + 1;     // Position of the current item
-
-            // it loop is true then reset counter from 1
-            if(item > items) {
-                item = item - items
-            }
-            startProgressBar()
-            $('#counter').html(item+" / "+items)
+        if (!$parent.parent().hasClass("navbar-nav")) {
+            $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth()});
         }
 
-        function startProgressBar() {
-            // apply keyframe animation
-            $(".slide-progress").css({
-                width: "100%",
-                transition: "width 5000ms"
-            });
-        }
+        return false;
+    });
 
-        function resetProgressBar() {
-            $(".slide-progress").css({
-                width: 0,
-                transition: "width 0s"
-            });
-        }
-
-        $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-            if (!$(this).next().hasClass('show')) {
-                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
-            }
-            var $subMenu = $(this).next('.dropdown-menu');
-            $subMenu.toggleClass('show');
-
-
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-                $('.dropdown-submenu .show').removeClass('show');
-            });
-
-
-            return false;
-        });
-
-    </script>
+</script>
 </body>
-
 </html>
