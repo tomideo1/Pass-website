@@ -12,17 +12,20 @@
   -->
     <!-- Default stylesheets-->
 
-    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Template specific stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crimson+Text" />
     <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
     <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
     <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <link rel="stylesheet" href="carousel/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="carousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-dropdownhover.min.css" rel="stylesheet">
 
-    <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+
     <style>
         body {
             color: white;
@@ -42,184 +45,168 @@
                 <img class="pass-logo" src="assets/images/Logo/pass.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fa fa-bars text-white"></i></span>
             </button>
 
-            <div class="navbar-collapse collapse " id="navbarTogglerDemo03">
-                <ul class="navbar-nav navbar-right mr-auto mt-4 mt-lg-2 text-uppercase ">
-                    <li class="nav-item active-link">
-                        <a class="nav-link  text-white section-scroll" href="#home">Home <span
-                                class="sr-only">(current)</span></a>
-                        <div class="underline"></div>
+            <div class="navbar-collapse collapse in" id="navbarTogglerDemo03" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" aria-expanded="true" style="">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Active Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="kopie"><a href="#">Dropdown</a></li>
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li class="active"><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 4</a>
+                                <ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">Dropdown Link 4</a></li>
+                                    <li><a href="#">Dropdown Submenu Link 4.1</a></li>
+                                    <li><a href="#">Dropdown Submenu Link 4.2</a></li>
+                                    <li><a href="#">Dropdown Submenu Link 4.3</a></li>
+                                    <li><a href="#">Dropdown Submenu Link 4.4</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 5</a>
+                                <ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
+                                    <li><a href="#">Dropdown Submenu Link 5.1</a></li>
+                                    <li><a href="#">Dropdown Submenu Link 5.2</a></li>
+                                    <li><a href="#">Dropdown Submenu Link 5.3</a></li>
+                                    <li class="dropdown dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="kopie"><a href="#">Dropdown Submenu Link 5.4</a></li>
+                                            <li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
+                                            <li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white section-scroll" href="#about">About</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white section-scroll" href="/showcase.html">Showcase</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white section-scroll" href="#contact">Contact</a>
-                        <div class="underline"></div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav  ml-auto mt-4 mt-lg-2 text-uppercase " id="icons">
-                    <li class="nav-item active mr-5">
-                        <a class="nav-link text-white" href="#" style="font-size: 18px;"><i
-                                class="fa fa-facebook"></i></a>
-                    </li>
-
-                    <li class="nav-item active mr-5">
-                        <a class="nav-link text-white" href="#" style="font-size: 18px;"><i
-                                class="fa fa-twitter"></i></a>
-                    </li>
-
-                    <li class="nav-item active mr-3">
-                        <a class="nav-link text-white" href="#" style="font-size: 18px;"><i
-                                class="fa fa-instagram"></i></a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="kopie"><a href="#">Dropdown2</a></li>
+                            <li><a href="#">Dropdown2 Link 1</a></li>
+                            <li><a href="#">Dropdown2 Link 2</a></li>
+                            <li><a href="#">Dropdown2 Link 3</a></li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 4</a>
+                                <ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">Dropdown2 Link 4</a></li>
+                                    <li><a href="#">Dropdown2 Submenu Link 4.1</a></li>
+                                    <li><a href="#">Dropdown2 Submenu Link 4.2</a></li>
+                                    <li><a href="#">Dropdown2 Submenu Link 4.3</a></li>
+                                    <li><a href="#">Dropdown2 Submenu Link 4.4</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 5</a>
+                                <ul class="dropdown-menu">
+                                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
+                                    <li><a href="#">Dropdown2 Submenu Link 5.1</a></li>
+                                    <li><a href="#">Dropdown2 Submenu Link 5.2</a></li>
+                                    <li><a href="#">Dropdown2 Submenu Link 5.3</a></li>
+                                    <li class="dropdown dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="kopie"><a href="#">Dropdown2 Submenu Link 5.4</a></li>
+                                            <li><a href="#">Dropdown2 Submenu Link 5.4.1</a></li>
+                                            <li><a href="#">Dropdown2 Submenu Link 5.4.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </nav>
-        <section class="home-section home-parallax home-fade home-full-height">
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
-                <div class="carousel-inner" role="listbox">
-                    <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item item active  bg-dark bg-gradient "
-                        style="background-image: url('assets/images/backgrounds/section-01.png')">
-                        <div class="titan-caption">
-                            <div class=" caption-content">
-                                <div class="row partner-intro">
-                                    <div class="col-md-12 mt-3 pl-5">
-                                        <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png">
-                                    </div>
-                                    <div class="col-md-12 mt-2 pl-5">
-                                        <div class=" pull-left">Comfort & Design</div>
-                                    </div>
-                                    <div class="col-md-12 mt-1 pl-5">
-                                        <div class="red-line"></div>
-                                    </div>
-                                    <div class="col-md-4 text-justify mt-3 pl-5">
+        <section class="home-section" style="background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);">
+            <div class="slide-progress"></div>
+            <div class="owl-carousel owl-theme" >
+                <div class=" item " style="background: linear-gradient(-230deg, #000000 1.22%, rgba(0, 0, 0, 0) 142.22%),url('assets/images/backgrounds/section-01.png');" >
+                    <div class="owl-caption" >
+                      <div class="container-fluid ml-lg-4 ml-md-4 ">
+                          <div class="row" >
+                              <div class="col-md-12">
+                                  <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png" style="width: 84px; height: 84px">
+                              </div>
+                              <div class="col-md-12 mt-2 header-title">
+                                  <div class=" pull-left border-bottom-red">Comfort & Design</div>
+                              </div>
+                              <div class="col-md-8 text-justify mt-3 ">
                                         <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat
                                             nec orci vitae accumsan.
                                         </span>
-                                    </div>
-                                </div>
-                                <footer>
-                                    <div class="row fixed-bottom featured">
-                                        <div class="col-md-12 ">
-                                            <p class="pull-left p-3 pl-sm-4 mt-3"
-                                                style="font-family:'Crimson Text'; letter-spacing: 5px; margin-left: 10px;">
-                                                FEATURED <span class="pl-5 ml-5  num"></span></p>
-                                            <a class="section-scroll btn btn-sm  pull-right  text-white"
-                                                href="#showcase">GO TO STUDIO <span class="ml-5 pt-3">
-                                                    <img src="assets/vectors/arrow.svg"></span>
-                                            </a>
+                              </div>
 
-                                        </div>
-                                    </div>
-                                </footer>
-                            </div>
-                        </div>
+                          </div>
+                          <div class="row">
+                              <div class="featured">
+                                  <p class=" mt-5 ml-3 "
+                                     style="font-family:'Crimson Text'; letter-spacing: 5px; ">
+                                      FEATURED
+                                  </p>
+                              </div>
+                              <a class=" btn ml-auto pull-right mt-4 " style="background-color: #FF0000; color: #ffffff;" href="#showcase">
+                                  <div class="d-flex flex-row mr-5">
+                                      <p class="p-2 col-6 mt-3 mr-2 ">GO TO STUDIO </p>
+                                      <img  src="assets/vectors/arrow.svg">
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
                     </div>
-
-                    <div class="carousel-item item  bg-gradient "
-                        style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
-                        <div class="titan-caption">
-                            <div class=" caption-content">
-                                <div class="row partner-intro">
-                                    <div class="col-md-12 mt-3 pl-5">
-                                        <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png">
-                                    </div>
-                                    <div class="col-md-12 mt-2 pl-5">
-                                        <div class=" pull-left">Comfort & Design</div>
-                                    </div>
-                                    <div class="col-md-12 mt-1 pl-5">
-                                        <div class="red-line"></div>
-                                    </div>
-                                    <div class="col-md-4 text-justify mt-3 pl-5">
+                    </div>
+                <div class=" item " style="background: linear-gradient(-230deg, #000000 1.22%, rgba(0, 0, 0, 0) 142.22%),url('assets/images/backgrounds/section-01.png');" >
+                    <div class="owl-caption" >
+                      <div class="container-fluid ml-lg-4 ml-md-4 ">
+                          <div class="row" >
+                              <div class="col-md-12">
+                                  <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png" style="width: 84px; height: 84px">
+                              </div>
+                              <div class="col-md-12 mt-2 header-title">
+                                  <div class=" pull-left border-bottom-red">Comfort & Design</div>
+                              </div>
+                              <div class="col-md-8 text-justify mt-3 ">
                                         <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat
                                             nec orci vitae accumsan.
                                         </span>
-                                    </div>
-                                </div>
-                                <footer>
-                                    <div class="row fixed-bottom featured">
-                                        <div class="col-md-12 ">
-                                            <p class="pull-left p-3 pl-sm-4 mt-3"
-                                                style="font-family:'Crimson Text'; letter-spacing: 5px; margin-left: 10px;">
-                                                FEATURED <span class="pl-5 ml-5  num"></span></p>
-                                            <a class="section-scroll btn btn-sm  pull-right  text-white"
-                                                href="#showcase">GO TO STUDIO <span class="ml-5 pt-3">
-                                                    <img src="assets/vectors/arrow.svg"></span>
-                                            </a>
+                              </div>
 
-                                        </div>
-                                    </div>
-                                </footer>
-                            </div>
-                        </div>
+                          </div>
+                          <div class="row">
+                              <div class="featured">
+                                  <p class=" mt-5 ml-3 "
+                                     style="font-family:'Crimson Text'; letter-spacing: 5px; ">
+                                      FEATURED
+                                  </p>
+                              </div>
+                              <a class=" btn ml-auto pull-right mt-4 " style="background-color: #FF0000; color: #ffffff;" href="#showcase">
+                                  <div class="d-flex flex-row mr-5">
+                                      <p class="p-2 col-6 mt-3 mr-2 ">GO TO STUDIO </p>
+                                      <img  src="assets/vectors/arrow.svg">
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
                     </div>
-                    <div class="carousel-item item  bg-gradient "
-                        style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
-                        <div class="titan-caption">
-                            <div class=" caption-content">
-                                <div class="row partner-intro">
-                                    <div class="col-md-12 mt-3 pl-5">
-                                        <img class="pull-left partner-logo " src="assets/images/Logo/cristina.png">
-                                    </div>
-                                    <div class="col-md-12 mt-2 pl-5">
-                                        <div class=" pull-left">Comfort & Design</div>
-                                    </div>
-                                    <div class="col-md-12 mt-1 pl-5">
-                                        <div class="red-line"></div>
-                                    </div>
-                                    <div class="col-md-4 text-justify mt-3 pl-5">
-                                        <span class="pull-left" style="font-size: 15px; font-family: 'Crimson Text'">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam volutpat
-                                            nec orci vitae accumsan.
-                                        </span>
-                                    </div>
-                                </div>
-                                <footer>
-                                    <div class="row fixed-bottom featured">
-                                        <div class="col-md-12 ">
-                                            <p class="pull-left p-3 pl-sm-4 mt-3"
-                                                style="font-family:'Crimson Text'; letter-spacing: 5px; margin-left: 10px;">
-                                                FEATURED <span class="pl-5 ml-5  num"></span></p>
-                                            <a class="section-scroll btn btn-sm  pull-right  text-white"
-                                                href="#showcase">GO TO STUDIO <span class="ml-5 pt-3">
-                                                    <img src="assets/vectors/arrow.svg"></span>
-                                            </a>
+                    </div>
 
-                                        </div>
-                                    </div>
-                                </footer>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fixed-bottom p-0 d-none d-sm-none d-lg-block">
-                        <a class="carousel-control-prev prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
                 </div>
-
+            <span id="counter" ></span>
         </section>
         <div class="main">
-            <section class="text-center" id="about">
+            <section class="text-center mt-n4" id="about">
                 <div class="container">
                     <h5 class="small-header">ABOUT US</h5>
                     <h1 class="jumbotron-heading mt-2 pb-2">Who We Are</h1>
@@ -235,9 +222,10 @@
                     </p>
 
                 </div>
-                <button class="section-scroll btn p-5 pull-right mt-4"
-                    style="background-color: #FF0000; color: #ffffff;" href="#showcase">READ MORE<span
-                        class="ml-5 pt-3">
+                <button class=" btn p-5 pull-right mt-4"
+                    style="background-color: #FF0000; color: #ffffff;" href="#showcase">READ MORE
+                    <span
+                        class="ml-2 pt-3">
                         <img src="assets/vectors/arrow.svg"></span>
                 </button>
             </section>
@@ -255,90 +243,89 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 text-center">
-                            <div class="partner">
-                                <img class="p-4 mt-5 img-fluid" src="/assets/images/partners/Vector (3).png"
+                            <div class="partner p-3">
+                                <img class="mx-auto " src="/assets/images/partners/Vector (3).png"
                                     style="display: block;">
                             </div>
                             <div class="partner-title align-items-center justify-content-center">
                                 <p class="mt-2">Joseph Joseph</p>
-                                <div class=" line"></div>
+                                <div class=" line mt-n4"></div>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="partner">
-                                <img class="p-4 mt-5 img-fluid" src="/assets/images/partners/progress-1.png"
+                            <div class="partner p-3">
+                                <img  class="mx-auto " src="/assets/images/partners/progress-1.png"
                                     style="display: block;">
                             </div>
                             <div class="partner-title">
                                 <p class="mt-2">Progress Profiles</p>
-                                <div class="line"></div>
+                                <div class="line mt-n4"></div>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="partner">
-                                <img class="p-4 mt-5 img-fluid" src="/assets/images/partners/porte_blindate_dibi 1.png"
+                            <div class="partner p-3">
+                                <img class="mx-auto" src="/assets/images/partners/porte_blindate_dibi 1.png"
                                     style="display: block;">
                             </div>
                             <div class="partner-title">
                                 <p class="mt-2">dibi Securezza & Design</p>
-                                <div class="line"></div>
+                                <div class="line mt-n4"></div>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="partner">
-                                <img class="p-4 mt-5 img-fluid" src="/assets/images/partners/logo-trans-222x62bn 1.png"
+                            <div class="partner p-3">
+                                <img class="mx-auto" src="/assets/images/partners/logo-trans-222x62bn 1.png"
                                     style="display: block;">
                             </div>
                             <div class="partner-title">
                                 <p class="mt-2"> Sonia</p>
-                                <div class="line"></div>
+                                <div class="line mt-n4"></div>
                             </div>
                         </div>
-
                     </div>
                     <div class="row mt-5">
                         <div class="col-md-3 text-center">
-                            <div class="partner">
-                                <img class="p-4 mt-4 img-fluid" src="/assets/images/partners/logo-geromin-new 2.png"
+                            <div class="partner p-3">
+                                <img class="mx-auto" src="/assets/images/partners/logo-geromin-new 2.png"
                                     style="display: block;">
                             </div>
                             <div class="partner-title align-items-center justify-content-center">
                                 <p class="mt-2">Geromin Group</p>
-                                <div class=" line"></div>
+                                <div class=" line mt-n4"></div>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="partner">
-                                <img class="pt-5 mt-sm-4" src="/assets/images/partners/logo (2) 1.png">
+                            <div class="partner p-3">
+                                <img class="mx-auto " src="/assets/images/partners/logo (2) 1.png">
                             </div>
                             <div class="partner-title">
                                 <p class="mt-2">art ceramica</p>
-                                <div class="line"></div>
+                                <div class="line mt-n4"></div>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="partner">
-                                <img class="p-4 mt-5 img-fluid" src="/assets/images/partners/logo 1.png"
+                            <div class="partner p-3">
+                                <img class="mx-auto" src="/assets/images/partners/logo 1.png"
                                     style="display: block;">
                             </div>
                             <div class="partner-title">
                                 <p class="mt-2">Marca Corona</p>
-                                <div class="line"></div>
+                                <div class="line mt-n4"></div>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
-                            <div class="partner">
-                                <img class="p-4 mt-1 img-fluid" src="/assets/images/partners/logo (1) 2.png"
+                            <div class="partner p-3">
+                                <img  src="/assets/images/partners/logo (1) 2.png"
                                     style="display: block;">
                             </div>
                             <div class="partner-title">
                                 <p class="mt-2"> Cristina </p>
-                                <div class="line"></div>
+                                <div class="line mt-n4"></div>
                             </div>
                         </div>
 
                     </div>
-
+                </div>
             </section>
             <section id="works">
                 <div class="container-fluid">
@@ -438,50 +425,90 @@
 JavaScripts
 =============================================
 -->
-
     <script src="assets/lib/jquery/dist/jquery.js"></script>
-    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/lib/wow/dist/wow.js"></script>
-    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
-    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
-    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
-    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/lib/smoothscroll.js"></script>
     <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/mdb.min.js"></script>
-
+<!--    <script src="assets/js/mdb.min.js"></script>-->
+    <script src="assets/js/bootstrap-dropdownhover.min.js"></script>
+    <script src="carousel/docs/assets/owlcarousel/owl.carousel.js"></script>
     <script>
+        $(window).on('load', function () {
+            $('.loader').fadeOut();
+            $('.page-loader').delay(350).fadeOut('slow');
+        });
         $('.nav-item').on('click', function () {
             $('.active-link').removeClass('active-link');
             $(this).addClass('active-link');
         });
-
-        $('.carousel').carousel({
-            touch: true
-        })
-
-        var totalItems = $('.item').length;
-        var currentIndex = $('div.item.active').index() + 1;
-        var down_index;
-        $('.num').html('' + currentIndex + '/' + totalItems + '');
-
-        $(".next").click(function () {
-            currentIndex_active = $('div.item.active').index() + 2;
-            if (totalItems >= currentIndex_active) {
-                down_index = $('div.item.active').index() + 2;
-                $('.num').html('' + currentIndex_active + '/' + totalItems + '');
+        var owl = $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:false,
+            singleItem:true,
+            items:1,
+            dots:false,
+            autoplay:4000,
+            info:true,
+            onInitialized  : counter, //When the plugin has initialized.
+            onTranslated : counter,
+            onTranslate: resetProgressBar,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
             }
         });
 
-        $(".prev").click(function () {
-            down_index = down_index - 1;
-            if (down_index >= 1) {
-                $('.num').html('' + down_index + '/' + totalItems + '');
+        function counter(event) {
+            let element   = event.target;         // DOM element, in this example .owl-carousel
+            let items     = event.item.count;     // Number of items
+            let item      = event.item.index + 1;     // Position of the current item
+
+            // it loop is true then reset counter from 1
+            if(item > items) {
+                item = item - items
             }
+            startProgressBar()
+            $('#counter').html(item+" / "+items)
+        }
+
+        function startProgressBar() {
+            // apply keyframe animation
+            $(".slide-progress").css({
+                width: "100%",
+                transition: "width 5000ms"
+            });
+        }
+
+        function resetProgressBar() {
+            $(".slide-progress").css({
+                width: 0,
+                transition: "width 0s"
+            });
+        }
+
+        $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+            if (!$(this).next().hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+            }
+            var $subMenu = $(this).next('.dropdown-menu');
+            $subMenu.toggleClass('show');
+
+
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                $('.dropdown-submenu .show').removeClass('show');
+            });
+
+
+            return false;
         });
 
     </script>
