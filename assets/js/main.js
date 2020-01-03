@@ -7,6 +7,11 @@
 
     $(document).ready(function() {
 
+        $(window).on('load', function () {
+            $('.loader').fadeOut();
+            $('.page-loader').delay(350).fadeOut('slow');
+        });
+
         /* ---------------------------------------------- /*
          * WOW Animation When You Scroll
          /* ---------------------------------------------- */
@@ -112,35 +117,11 @@
          * Intro slider setup
          /* ---------------------------------------------- */
 
-        if( $('.hero-slider').length > 0 ) {
-            $('.hero-slider').flexslider( {
-                animation: "fade",
-                animationSpeed: 1000,
-                animationLoop: true,
-                prevText: '',
-                nextText: '',
-                before: function(slider) {
-                    $('.titan-caption').fadeOut().animate({top:'-80px'},{queue:false, easing: 'swing', duration: 700});
-                    slider.slides.eq(slider.currentSlide).delay(500);
-                    slider.slides.eq(slider.animatingTo).delay(500);
-                },
-                after: function(slider) {
-                    $('.titan-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'swing', duration: 700});
-                },
-                useCSS: true
-            });
-        }
 
 
         /* ---------------------------------------------- /*
          * Rotate
          /* ---------------------------------------------- */
-
-        $(".rotate").textrotator({
-            animation: "dissolve",
-            separator: "|",
-            speed: 3000
-        });
 
 
         /* ---------------------------------------------- /*
@@ -222,46 +203,13 @@
 
         /* ---------------------------------------------- /*
          * Video popup, Gallery
-         /* ---------------------------------------------- */
-
-        $('.video-pop-up').magnificPopup({
-            type: 'iframe'
-        });
-
-        $(".gallery-item").magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0,1]
-            },
-            image: {
-                titleSrc: 'title',
-                tError: 'The image could not be loaded.'
-            }
-        });
 
 
         /* ---------------------------------------------- /*
          * Portfolio
          /* ---------------------------------------------- */
 
-        var worksgrid   = $('#works-grid'),
-            worksgrid_mode;
 
-        if (worksgrid.hasClass('works-grid-masonry')) {
-            worksgrid_mode = 'masonry';
-        } else {
-            worksgrid_mode = 'fitRows';
-        }
-
-        worksgrid.imagesLoaded(function() {
-            worksgrid.isotope({
-                layoutMode: worksgrid_mode,
-                itemSelector: '.work-item'
-            });
-        });
 
         $('#filters a').click(function() {
             $('#filters .current').removeClass('current');
@@ -285,24 +233,11 @@
          * Testimonials
          /* ---------------------------------------------- */
 
-        if ($('.testimonials-slider').length > 0 ) {
-            $('.testimonials-slider').flexslider( {
-                animation: "slide",
-                smoothHeight: true
-            });
-        }
-
-
         /* ---------------------------------------------- /*
          * Post Slider
          /* ---------------------------------------------- */
 
-        if ($('.post-images-slider').length > 0 ) {
-            $('.post-images-slider').flexslider( {
-                animation: "slide",
-                smoothHeight: true,
-            });
-        }
+
 
 
         /* ---------------------------------------------- /*
@@ -335,31 +270,8 @@
          * Youtube video background
          /* ---------------------------------------------- */
 
-        $(function(){
-            $(".video-player").mb_YTPlayer();
-        });
 
-        $('#video-play').click(function(event) {
-            event.preventDefault();
-            if ($(this).hasClass('fa-play')) {
-                $('.video-player').playYTP();
-            } else {
-                $('.video-player').pauseYTP();
-            }
-            $(this).toggleClass('fa-play fa-pause');
-            return false;
-        });
 
-        $('#video-volume').click(function(event) {
-            event.preventDefault();
-            if ($(this).hasClass('fa-volume-off')) {
-                $('.video-player').YTPUnmute();
-            } else {
-                $('.video-player').YTPMute();
-            }
-            $(this).toggleClass('fa-volume-off fa-volume-up');
-            return false;
-        });
 
 
         /* ---------------------------------------------- /*
@@ -408,10 +320,7 @@
          * Blog masonry
          /* ---------------------------------------------- */
 
-        $('.post-masonry').imagesLoaded(function() {
-            $('.post-masonry').masonry();
-        });
-
+     
 
         /* ---------------------------------------------- /*
          * Scroll Animation
