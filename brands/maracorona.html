@@ -2,8 +2,7 @@
 <html lang="en-US" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <title>PASS</title>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--
@@ -201,8 +200,9 @@
     <section class="home-section" style="background-image: url('../assets/images/backgrounds/studio-backdrop.png'); " >
         <div class="module text-center">
             <div class="container mx-auto">
-                <h6 class="page-title">STUDIO</h6>
-                <h1 class="section-title">Bathroom</h1>
+                <h6 class="page-title  mb-5 ">Brands</h6>
+                <img src="/assets/images/Logo/Geromin.png" class="">
+                <h1 class="section-title ">Mara Corona</h1>
                 <div class="red-line"
                      style="margin: 0 auto; display:flex; justify-content:space-around; float:none; ">
                 </div>
@@ -220,13 +220,7 @@
                     <form>
 
                         <div class="row mt-lg-n2 mt-md-n2 mt-n2">
-                            <div class="form-group  col-lg-4 col-4 col-md-4 col-sm-4 col-4 text-white">
 
-                                <label class="float-left" >BRAND</label>
-                                <select data-filter="brand" class="filter-brand filter  text-white form-control text-uppercase" id="brand" style="background: rgba(0, 0, 0, 0.2); height: 49px; font-size: 14px;" >
-                                    <option value=""  >ALL</option>
-                                </select>
-                            </div>
                             <div class="form-group  col-lg-4 col-4 col-md-4 col-sm-4 col-4 text-white">
 
                                 <label class="float-left" >CATEGORY</label>
@@ -238,7 +232,7 @@
 
                                 <label class="float-left d-none d-lg-block d-md-block" >SUB CATEGORY</label>
                                 <label class="float-left d-lg-none d-md-none d-block" >SUB CAT</label>
-                                <select data-filter="sub_category" class="filter-sub_category filter  text-white form-control text-uppercase" id="sub_category" style="background: rgba(0, 0, 0, 0.2); height: 49px; font-size: 14px;" >
+                                <select data-filter="sub_category" class="filter-sub_category filter  text-white form-control text-uppercase " id="sub_category" style="background: rgba(0, 0, 0, 0.2); height: 49px; font-size: 14px; " >
                                     <option value="">ALL</option>
                                 </select>
                             </div>
@@ -251,7 +245,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row mt-5 text-center " id="products">
+        <div class="row mt-5"  id="products">
         </div>
     </div>
 </main>
@@ -262,9 +256,7 @@
 <script src="../assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
 <script src="../assets/lib/smoothscroll.js"></script>
 <script src="../assets/js/main.js"></script>
-
 <script>
-
     $('.dropdown-menu .dropdown-toggled').on('click', function () {
 
         var $el = $(this);
@@ -287,77 +279,134 @@
     });
     var data = [
         {
-        "Studio": "Bathroom",
-        "Brand": "Sonia",
-        "Category": "Furnitures",
-        "SubCategory": "Furnitures",
-        "image": "/assets/images/bathroom/sonia/furniture/s1suit.jpg",
-        "product_name": "S1Suit"
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "Cubicles",
-            "image": "/assets/images/bathroom/geromin/shower_cubicle/sound.jpg",
-            "product_name": "Sound"
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "4DTiles",
+            "SubCategory": "4DTiles",
+            "image": "/assets/images/tiles/maracorona/4dtiles.jpg",
+            "product_name": "4DTiles"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Arkinstone",
+            "SubCategory": "Arkinstone",
+            "image": "/assets/images/tiles/maracorona/arkinstone.jpg",
+            "product_name": "Arkinstone"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Deluxe",
+            "SubCategory": "Deluxe",
+            "image": "/assets/images/tiles/maracorona/deluxe.jpg",
+            "product_name": "Deluxe"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Foyer",
+            "SubCategory": "Foyer",
+            "image": "/assets/images/tiles/maracorona/foyer.jpg",
+            "product_name": "Foyer"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Garden",
+            "SubCategory": "Garden",
+            "image": "/assets/images/tiles/maracorona/garden.jpg",
+            "product_name": "Deluxe"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Lagom",
+            "SubCategory": "Lagom",
+            "image": "/assets/images/tiles/maracorona/lagom.jpg",
+            "product_name": "Lagom"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Matrix",
+            "SubCategory": "Matrix",
+            "image": "/assets/images/tiles/maracorona/matrix.jpg",
+            "product_name": "Matrix"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Overclay",
+            "SubCategory": "Overclay",
+            "image": "/assets/images/tiles/maracorona/overclay.jpg",
+            "product_name": "Overclay"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Phase",
+            "SubCategory": "Phase",
+            "image": "/assets/images/tiles/maracorona/phase.jpg",
+            "product_name": "Phase"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Prestige",
+            "SubCategory": "Prestige",
+            "image": "/assets/images/tiles/maracorona/prestige.jpg",
+            "product_name": "Prestige"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Prestige",
+            "SubCategory": "Prestige",
+            "image": "/assets/images/tiles/maracorona/prestige.jpg",
+            "product_name": "Prestige"
+        },
 
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "bathtubs",
-            "image": "/assets/images/bathroom/geromin/bathubs/move.jpg",
-            "product_name": "move"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "Sauna",
-            "image": "/assets/images/bathroom/geromin/sauna/ethosc.jpg",
-            "product_name": "EthosC"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "showers",
-            "image": "/assets/images/bathroom/geromin/showers/forma.jpg",
-            "product_name": "Forma"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "furnitures",
-            "image": "/assets/images/bathroom/geromin/furnitures/str8_comp.jpg",
-            "product_name": "Str8Comp"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "ALICE CERAMICA",
-            "Category": "Bath Systems",
-            "SubCategory": "Wash Basins",
-            "image": "/assets/images/bathroom/ceramica/sinc/bicolor.jpg",
-            "product_name": "Bicolor"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "ALICE CERAMICA",
-            "Category": "Bath Systems",
-            "SubCategory": "Wash Basins",
-            "image": "/assets/images/bathroom/ceramica/sinc/nur.jpg",
-            "product_name": "Nur"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Cristina",
-            "Category": "Bath Systems",
-            "SubCategory": "Showers",
-            "image": "/assets/images/bathroom/cristina/showers/showerhead.jpg",
-            "product_name": "ShowerHead"
-
-    },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Restyle",
+            "SubCategory": "Restyle",
+            "image": "/assets/images/tiles/maracorona/restyle.jpg",
+            "product_name": "Restyle"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Springstone",
+            "SubCategory": "Springstone",
+            "image": "/assets/images/tiles/maracorona/springstone.jpg",
+            "product_name": "Springstone"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Stoneline",
+            "SubCategory": "Stoneline",
+            "image": "/assets/images/tiles/maracorona/stoneline.jpg",
+            "product_name": "Stoneline"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Stoneone",
+            "SubCategory": "Stoneone",
+            "image": "/assets/images/tiles/maracorona/stoneone.jpg",
+            "product_name": "Stoneone"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Mara Corona",
+            "Category": "Street",
+            "SubCategory": "Street",
+            "image": "/assets/images/tiles/maracorona/street.jpg",
+            "product_name": "Street"
+        },
 
     ];
 
@@ -374,7 +423,7 @@
             image = data[i].image;
 
         //create product cards
-        products += "<div class='col-md-3 product  text-dark' data-brand='" + brand + "' data-category='" + category + "' data-sub_category='" + sub_category + "' data-product_name='" + product_name + "'><div class=' text-center'><div style='width: 270px; height: 362px; background-size:cover; background-image: url(" + image + ");'></div><b class='product_name'>" + product_name + "</b><br />" + brand+ "<br /> <p>" + category + " > " + sub_category+ "</p></div></div>";
+        products += "<div class='col-md-3 product  text-dark' data-brand='" + brand + "' data-category='" + category + "' data-sub_category='" + sub_category + "' data-product_name='" + product_name + "'><div class=' text-center'><div style='width: 270px; height: 362px; background-size:cover; background-image: url(" + image + ");'></div><br /><b class='product_name'>" + product_name + "</b><br />" + brand+ "<br /> <small>" + category + " > " + sub_category+ "</small></div></div>";
         // products += "<div class='col-sm-3 product' data-brand='" + brand + "' data-category='" + category + "' data-sub_category='" + sub_category + "' data-product_name='" + product_name + "'>";
 
 
