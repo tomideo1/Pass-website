@@ -165,7 +165,7 @@
         <div class="module text-center">
             <div class="container mx-auto">
                 <h6 class="page-title">STUDIO</h6>
-                <h1 class="section-title">Bathroom</h1>
+                <h1 class="section-title">Tiles</h1>
                 <div class="red-line"
                      style="margin: 0 auto; display:flex; justify-content:space-around; float:none; ">
                 </div>
@@ -214,7 +214,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row mt-5 text-center " id="products">
+        <div class="row mt-5" id="products">
         </div>
     </div>
 </main>
@@ -250,77 +250,21 @@
     });
     var data = [
         {
-        "Studio": "Bathroom",
-        "Brand": "Sonia",
-        "Category": "Furnitures",
-        "SubCategory": "Furnitures",
-        "image": "/assets/images/bathroom/sonia/furniture/s1suit.jpg",
-        "product_name": "S1Suit"
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "Cubicles",
-            "image": "/assets/images/bathroom/geromin/shower_cubicle/sound.jpg",
-            "product_name": "Sound"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "bathtubs",
-            "image": "/assets/images/bathroom/geromin/bathubs/move.jpg",
-            "product_name": "move"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "Sauna",
-            "image": "/assets/images/bathroom/geromin/sauna/ethosc.jpg",
-            "product_name": "EthosC"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "showers",
-            "image": "/assets/images/bathroom/geromin/showers/forma.jpg",
-            "product_name": "Forma"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Geromin",
-            "Category": "Bath Systems",
-            "SubCategory": "furnitures",
-            "image": "/assets/images/bathroom/geromin/furnitures/str8_comp.jpg",
-            "product_name": "Str8Comp"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "ALICE CERAMICA",
-            "Category": "Bath Systems",
-            "SubCategory": "Wash Basins",
-            "image": "/assets/images/bathroom/ceramica/sinc/bicolor.jpg",
-            "product_name": "Bicolor"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "ALICE CERAMICA",
-            "Category": "Bath Systems",
-            "SubCategory": "Wash Basins",
-            "image": "/assets/images/bathroom/ceramica/sinc/nur.jpg",
-            "product_name": "Nur"
-
-    }, {
-        "Studio": "Bathroom",
-            "Brand": "Cristina",
-            "Category": "Bath Systems",
-            "SubCategory": "Showers",
-            "image": "/assets/images/bathroom/cristina/showers/showerhead.jpg",
-            "product_name": "ShowerHead"
-
-    },
+            "Studio": "Tiles",
+            "Brand": "Mara",
+            "Category": "Tiles",
+            "SubCategory": "4DTiles",
+            "image": "/assets/images/tiles/maracorona/4dtiles.jpg",
+            "product_name": "S1Suit"
+        },
+        {
+            "Studio": "Tiles",
+            "Brand": "Sonia",
+            "Category": "Tiles",
+            "SubCategory": "4DTiles",
+            "image": "/assets/images/tiles/maracorona/4dtiles.jpg",
+            "product_name": "S1Suit"
+        },
 
     ];
 
@@ -337,7 +281,7 @@
             image = data[i].image;
 
         //create product cards
-        products += "<div class='col-md-3 product  text-dark' data-brand='" + brand + "' data-category='" + category + "' data-sub_category='" + sub_category + "' data-product_name='" + product_name + "'><div class=' text-center'><div style='width: 270px; height: 362px; background-size:cover; background-image: url(" + image + ");'></div><b class='product_name'>" + product_name + "</b><br />" + brand+ "<br /> <p>" + category + " > " + sub_category+ "</p></div></div>";
+        products += "<div class='col-md-3 product  text-dark' data-brand='" + brand + "' data-category='" + category + "' data-sub_category='" + sub_category + "' data-product_name='" + product_name + "'><div class=' text-center'><div style='width: 270px; height: 362px; background-size:cover; background-image: url(" + image + ");'></div><br /><b class='product_name'>" + product_name + "</b><br />" + brand+ "<br /> <p>" + category + " > " + sub_category+ "</p></div></div>";
         // products += "<div class='col-sm-3 product' data-brand='" + brand + "' data-category='" + category + "' data-sub_category='" + sub_category + "' data-product_name='" + product_name + "'>";
 
 
