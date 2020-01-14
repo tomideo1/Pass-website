@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f29298b-a7c3-420b-835f-b6d908cb6dbe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/brands/maracorona.html" beforeDir="false" afterPath="$PROJECT_DIR$/brands/maracorona.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,9 +128,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="162" width="670" height="683" key="search.everywhere.popup" timestamp="1578931089314">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="385" y="160" width="670" height="674" key="search.everywhere.popup" timestamp="1579030943037">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
+    <state x="385" y="160" width="670" height="674" key="search.everywhere.popup/0.23.1440.811@0.23.1440.811" timestamp="1579030943037" />
     <state x="385" y="161" width="670" height="676" key="search.everywhere.popup/0.23.1440.814@0.23.1440.814" timestamp="1578927793043" />
     <state x="385" y="162" width="670" height="683" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1578931089314" />
   </component>
