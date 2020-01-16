@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f29298b-a7c3-420b-835f-b6d908cb6dbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Logo/maracorona.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +84,7 @@
       <workItem from="1577955145931" duration="42342000" />
       <workItem from="1578054169971" duration="1387000" />
       <workItem from="1578925563791" duration="6632000" />
-      <workItem from="1579178888619" duration="6866000" />
+      <workItem from="1579178888619" duration="7042000" />
     </task>
     <servers />
   </component>
@@ -98,6 +96,10 @@
       <screen x="1440" y="23" width="1600" height="877" />
     </state>
     <state x="1919" y="257" key="com.intellij.ide.util.TipDialog/1440.23.1600.877/0.23.1440.804@1440.23.1600.877" timestamp="1579178899408" />
+    <state x="502" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579188858709">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="502" y="369" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1579188858709" />
     <state x="385" y="152" width="670" height="748" key="search.everywhere.popup" timestamp="1579180186892">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
