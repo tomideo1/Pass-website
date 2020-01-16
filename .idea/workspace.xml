@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3f29298b-a7c3-420b-835f-b6d908cb6dbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Logo/maracorona.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,43 +24,6 @@
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>centrla</find>
-      <find>take</find>
-      <find>partner</find>
-      <find>.btn</find>
-      <find>@media</find>
-      <find>owl-nav</find>
-      <find>kopie</find>
-      <find>color</find>
-      <find>a {</find>
-      <find>active-link</find>
-      <find>yt</find>
-      <find>a:hover</find>
-      <find>dropdown-menu &gt; li &gt; a</find>
-      <find>dropdown-menu &gt; li</find>
-      <find>dropdown-menu &gt; li &gt;</find>
-      <find>dropdown</find>
-      <find>dropdown-menu</find>
-      <find>dropdown-toggled</find>
-      <find>#about</find>
-      <find>pointer</find>
-      <find>about</find>
-      <find>bathroom</find>
-      <find>brands</find>
-      <find>studio</find>
-      <find>counter</find>
-      <find>brand</find>
-      <find>media</find>
-      <find>acti</find>
-      <find>make</find>
-      <find>geromin</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>brand</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,6 +86,7 @@
       <workItem from="1577955145931" duration="42342000" />
       <workItem from="1578054169971" duration="1387000" />
       <workItem from="1578925563791" duration="6632000" />
+      <workItem from="1579178888619" duration="6866000" />
     </task>
     <servers />
   </component>
@@ -128,12 +94,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="160" width="670" height="674" key="search.everywhere.popup" timestamp="1579030943037">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="1919" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1579178899408">
+      <screen x="1440" y="23" width="1600" height="877" />
+    </state>
+    <state x="1919" y="257" key="com.intellij.ide.util.TipDialog/1440.23.1600.877/0.23.1440.804@1440.23.1600.877" timestamp="1579178899408" />
+    <state x="385" y="152" width="670" height="748" key="search.everywhere.popup" timestamp="1579180186892">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="160" width="670" height="674" key="search.everywhere.popup/0.23.1440.811@0.23.1440.811" timestamp="1579030943037" />
     <state x="385" y="161" width="670" height="676" key="search.everywhere.popup/0.23.1440.814@0.23.1440.814" timestamp="1578927793043" />
     <state x="385" y="162" width="670" height="683" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1578931089314" />
+    <state x="385" y="152" width="670" height="748" key="search.everywhere.popup/1440.0.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1579180186892" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
