@@ -4080,11 +4080,9 @@ fieldset {
 
 @media only screen and (min-width: 769px) {
     .owl-caption {
-        padding-top: 400px;
+        height: 700px;
+        padding-top: 335px;
     }
-
-
-
     .header-title {
         font-family: Crimson Text;
         font-style: normal;
@@ -4100,16 +4098,16 @@ fieldset {
     .owl-caption {
         padding-top: 140px;
     }
-    #marcacorona img{
+    #marcacorona img {
         margin-top: 60px !important;
     }
-    #alice img{
+    #alice img {
         margin-top: 60px !important;
     }
-    #sonia img{
+    #sonia img {
         margin-top: 60px !important;
     }
-    #cristina img{
+    #cristina img {
         margin-top: 12px !important;
     }
     .header-title {
@@ -4118,35 +4116,33 @@ fieldset {
 }
 
 @media only screen and (max-width: 320px) {
-    #marcacorona img{
+    #marcacorona img {
         margin-top: 38px !important;
     }
-    #alice img{
+    #alice img {
         margin-top: 38px !important;
     }
-    #sonia img{
-        margin-top:  59px !important;
+    #sonia img {
+        margin-top: 59px !important;
     }
-    #cristina img{
+    #cristina img {
         margin-top: 12px !important;
     }
-
 }
 
 @media only screen and (width:768px) {
-    #marcacorona img{
+    #marcacorona img {
         margin-top: 60px !important;
     }
-    #alice img{
+    #alice img {
         margin-top: 38px !important;
     }
-    #sonia img{
-        margin-top:  82px !important;
+    #sonia img {
+        margin-top: 82px !important;
     }
-    #cristina img{
+    #cristina img {
         margin-top: 60px !important;
     }
-
 }
 
 .border-bottom-red {
