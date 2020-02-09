@@ -1,13 +1,12 @@
-
 /* ---------------------------------------------- /*
  * Preloader
  /* ---------------------------------------------- */
-(function(){
+(function() {
 
 
     $(document).ready(function() {
 
-        $(window).on('load', function () {
+        $(window).on('load', function() {
             $('.loader').fadeOut();
             $('.page-loader').delay(350).fadeOut('slow');
         });
@@ -45,13 +44,13 @@
          /* ---------------------------------------------- */
 
         var homeSection = $('.home-section'),
-            navbar      = $('.navbar-custom'),
-            navHeight   = navbar.height(),
-            worksgrid   = $('#works-grid'),
-            width       = Math.max($(window).width(), window.innerWidth),
-            mobileTest  = false;
+            navbar = $('.navbar-custom'),
+            navHeight = navbar.height(),
+            worksgrid = $('#works-grid'),
+            width = Math.max($(window).width(), window.innerWidth),
+            mobileTest = false;
 
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             mobileTest = true;
         }
 
@@ -108,7 +107,7 @@
                 }
                 if (homeSection.hasClass('home-fade') && ($(scrollTopp).scrollTop() <= homeSHeight)) {
                     var caption = $('.caption-content');
-                    caption.css('opacity', (1 - topScroll/homeSection.height() * 1));
+                    caption.css('opacity', (1 - topScroll / homeSection.height() * 1));
                 }
             }
         }
@@ -131,7 +130,7 @@
         function navbarAnimation(navbar, homeSection, navHeight) {
             var topScroll = $(window).scrollTop();
             if (navbar.length > 0 && homeSection.length > 0) {
-                if(topScroll >= navHeight) {
+                if (topScroll >= navHeight) {
                     navbar.removeClass('navbar-transparent');
                 } else {
                     navbar.addClass('navbar-transparent');
@@ -146,7 +145,7 @@
         function navbarSubmenu(width) {
             if (width > 767) {
                 $('.navbar-custom .navbar-nav > li .dropdown').hover(function() {
-                    var MenuLeftOffset  = $('.dropdown-menu', $(this)).offset().left;
+                    var MenuLeftOffset = $('.dropdown-menu', $(this)).offset().left;
                     var Menu1LevelWidth = $('.dropdown-menu', $(this)).width();
                     if (width - MenuLeftOffset < Menu1LevelWidth * 2) {
                         $(this).children('.dropdown-menu').addClass('leftauto');
@@ -194,8 +193,8 @@
          * Navbar collapse on click
          /* ---------------------------------------------- */
 
-        $(document).on('click','.navbar-collapse.in',function(e) {
-            if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(document).on('click', '.navbar-collapse.in', function(e) {
+            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
                 $(this).collapse('hide');
             }
         });
@@ -247,9 +246,9 @@
         $('.progress-bar').each(function(i) {
             $(this).appear(function() {
                 var percent = $(this).attr('aria-valuenow');
-                $(this).animate({'width' : percent + '%'});
-                $(this).find('span').animate({'opacity' : 1}, 900);
-                $(this).find('span').countTo({from: 0, to: percent, speed: 900, refreshInterval: 30});
+                $(this).animate({ 'width': percent + '%' });
+                $(this).find('span').animate({ 'opacity': 1 }, 900);
+                $(this).find('span').countTo({ from: 0, to: percent, speed: 900, refreshInterval: 30 });
             });
         });
 
@@ -261,7 +260,7 @@
         $('.count-item').each(function(i) {
             $(this).appear(function() {
                 var number = $(this).find('.count-to').data('countto');
-                $(this).find('.count-to').countTo({from: 0, to: number, speed: 1200, refreshInterval: 30});
+                $(this).find('.count-to').countTo({ from: 0, to: number, speed: 1200, refreshInterval: 30 });
             });
         });
 
@@ -302,7 +301,7 @@
             }
 
             // Build carousel
-            $(this).owlCarousel( {
+            $(this).owlCarousel({
                 navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
                 nav: navigation,
                 dots: pagination,
@@ -320,7 +319,7 @@
          * Blog masonry
          /* ---------------------------------------------- */
 
-     
+
 
         /* ---------------------------------------------- /*
          * Scroll Animation
@@ -338,7 +337,7 @@
          Working Contact Form
          ================================================================*/
 
-        $("#contactForm").submit(function (e) {
+        $("#contactForm").submit(function(e) {
 
             e.preventDefault();
             var $ = jQuery;
@@ -352,22 +351,21 @@
             $cfsubmit.text("Sending...");
 
 
-            $.ajax(
-                {
-                    url: formURL,
-                    type: "POST",
-                    data: postData,
-                    success: function (data) {
-                        $cfResponse.html(data);
-                        $cfsubmit.text(cfsubmitText);
-                        $('#contactForm input[name=name]').val('');
-                        $('#contactForm input[name=email]').val('');
-                        $('#contactForm textarea[name=message]').val('');
-                    },
-                    error: function (data) {
-                        alert("Error occurd! Please try again");
-                    }
-                });
+            $.ajax({
+                url: formURL,
+                type: "POST",
+                data: postData,
+                success: function(data) {
+                    $cfResponse.html(data);
+                    $cfsubmit.text(cfsubmitText);
+                    $('#contactForm input[name=name]').val('');
+                    $('#contactForm input[name=email]').val('');
+                    $('#contactForm textarea[name=message]').val('');
+                },
+                error: function(data) {
+                    alert("Error occurd! Please try again");
+                }
+            });
 
             return false;
 
@@ -378,7 +376,7 @@
          Working Request A Call Form
          ================================================================*/
 
-        $("#requestACall").submit(function (e) {
+        $("#requestACall").submit(function(e) {
 
             e.preventDefault();
             var $ = jQuery;
@@ -392,22 +390,21 @@
             $cfsubmit.text("Sending...");
 
 
-            $.ajax(
-                {
-                    url: formURL,
-                    type: "POST",
-                    data: postData,
-                    success: function (data) {
-                        $cfResponse.html(data);
-                        $cfsubmit.text(cfsubmitText);
-                        $('#requestACall input[name=name]').val('');
-                        $('#requestACall input[name=subject]').val('');
-                        $('#requestACall textarea[name=phone]').val('');
-                    },
-                    error: function (data) {
-                        alert("Error occurd! Please try again");
-                    }
-                });
+            $.ajax({
+                url: formURL,
+                type: "POST",
+                data: postData,
+                success: function(data) {
+                    $cfResponse.html(data);
+                    $cfsubmit.text(cfsubmitText);
+                    $('#requestACall input[name=name]').val('');
+                    $('#requestACall input[name=subject]').val('');
+                    $('#requestACall textarea[name=phone]').val('');
+                },
+                error: function(data) {
+                    alert("Error occurd! Please try again");
+                }
+            });
 
             return false;
 
@@ -418,7 +415,7 @@
          Working Reservation Form
          ================================================================*/
 
-        $("#reservationForm").submit(function (e) {
+        $("#reservationForm").submit(function(e) {
 
             e.preventDefault();
             var $ = jQuery;
@@ -432,23 +429,22 @@
             $cfsubmit.text("Sending...");
 
 
-            $.ajax(
-                {
-                    url: formURL,
-                    type: "POST",
-                    data: postData,
-                    success: function (data) {
-                        $cfResponse.html(data);
-                        $cfsubmit.text(cfsubmitText);
-                        $('#reservationForm input[name=date]').val('');
-                        $('#reservationForm input[name=time]').val('');
-                        $('#reservationForm textarea[name=people]').val('');
-                        $('#reservationForm textarea[name=email]').val('');
-                    },
-                    error: function (data) {
-                        alert("Error occurd! Please try again");
-                    }
-                });
+            $.ajax({
+                url: formURL,
+                type: "POST",
+                data: postData,
+                success: function(data) {
+                    $cfResponse.html(data);
+                    $cfsubmit.text(cfsubmitText);
+                    $('#reservationForm input[name=date]').val('');
+                    $('#reservationForm input[name=time]').val('');
+                    $('#reservationForm textarea[name=people]').val('');
+                    $('#reservationForm textarea[name=email]').val('');
+                },
+                error: function(data) {
+                    alert("Error occurd! Please try again");
+                }
+            });
 
             return false;
 
@@ -462,10 +458,10 @@
         $('#subscription-form').submit(function(e) {
 
             e.preventDefault();
-            var $form           = $('#subscription-form');
-            var submit          = $('#subscription-form-submit');
-            var ajaxResponse    = $('#subscription-response');
-            var email           = $('input#semail').val();
+            var $form = $('#subscription-form');
+            var submit = $('#subscription-form-submit');
+            var ajaxResponse = $('#subscription-response');
+            var email = $('input#semail').val();
 
             $.ajax({
                 type: 'POST',
@@ -480,7 +476,7 @@
                     submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
                 },
                 success: function(result) {
-                    if(result.sendstatus == 1) {
+                    if (result.sendstatus == 1) {
                         ajaxResponse.html(result.message);
                         $form.fadeOut(500);
                     } else {
@@ -496,7 +492,7 @@
          * Google Map
          /* ---------------------------------------------- */
 
-        if($("#map").length == 0 || typeof google == 'undefined') return;
+        if ($("#map").length == 0 || typeof google == 'undefined') return;
 
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
@@ -516,12 +512,10 @@
 
                 // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
-                styles: [
-                    {
+                styles: [{
                         "featureType": "all",
                         "elementType": "geometry.fill",
-                        "stylers": [
-                            {
+                        "stylers": [{
                                 "visibility": "on"
                             },
                             {
@@ -532,17 +526,14 @@
                     {
                         "featureType": "administrative",
                         "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "saturation": "22"
-                            }
-                        ]
+                        "stylers": [{
+                            "saturation": "22"
+                        }]
                     },
                     {
                         "featureType": "administrative",
                         "elementType": "geometry.stroke",
-                        "stylers": [
-                            {
+                        "stylers": [{
                                 "saturation": "-58"
                             },
                             {
@@ -553,17 +544,14 @@
                     {
                         "featureType": "administrative",
                         "elementType": "labels.text",
-                        "stylers": [
-                            {
-                                "color": "#f8f8f8"
-                            }
-                        ]
+                        "stylers": [{
+                            "color": "#f8f8f8"
+                        }]
                     },
                     {
                         "featureType": "administrative",
                         "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
+                        "stylers": [{
                                 "color": "#999999"
                             },
                             {
@@ -574,17 +562,14 @@
                     {
                         "featureType": "administrative",
                         "elementType": "labels.text.stroke",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            }
-                        ]
+                        "stylers": [{
+                            "visibility": "on"
+                        }]
                     },
                     {
                         "featureType": "administrative.country",
                         "elementType": "geometry.fill",
-                        "stylers": [
-                            {
+                        "stylers": [{
                                 "color": "#f9f9f9"
                             },
                             {
@@ -595,17 +580,14 @@
                     {
                         "featureType": "landscape",
                         "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#f2f2f2"
-                            }
-                        ]
+                        "stylers": [{
+                            "color": "#f2f2f2"
+                        }]
                     },
                     {
                         "featureType": "landscape",
                         "elementType": "geometry",
-                        "stylers": [
-                            {
+                        "stylers": [{
                                 "saturation": "-19"
                             },
                             {
@@ -619,17 +601,14 @@
                     {
                         "featureType": "poi",
                         "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
                     },
                     {
                         "featureType": "road",
                         "elementType": "all",
-                        "stylers": [
-                            {
+                        "stylers": [{
                                 "saturation": -100
                             },
                             {
@@ -640,35 +619,28 @@
                     {
                         "featureType": "road.highway",
                         "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
+                        "stylers": [{
+                            "visibility": "simplified"
+                        }]
                     },
                     {
                         "featureType": "road.arterial",
                         "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
                     },
                     {
                         "featureType": "transit",
                         "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
                     },
                     {
                         "featureType": "water",
                         "elementType": "all",
-                        "stylers": [
-                            {
+                        "stylers": [{
                                 "color": "#d8e1e5"
                             },
                             {
@@ -679,38 +651,30 @@
                     {
                         "featureType": "water",
                         "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "color": "#dedede"
-                            }
-                        ]
+                        "stylers": [{
+                            "color": "#dedede"
+                        }]
                     },
                     {
                         "featureType": "water",
                         "elementType": "labels.text",
-                        "stylers": [
-                            {
-                                "color": "#cbcbcb"
-                            }
-                        ]
+                        "stylers": [{
+                            "color": "#cbcbcb"
+                        }]
                     },
                     {
                         "featureType": "water",
                         "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
-                                "color": "#9c9c9c"
-                            }
-                        ]
+                        "stylers": [{
+                            "color": "#9c9c9c"
+                        }]
                     },
                     {
                         "featureType": "water",
                         "elementType": "labels.text.stroke",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
                     }
                 ]
             };
@@ -742,5 +706,3 @@
 
     });
 })(jQuery);
-
-

@@ -3903,7 +3903,11 @@ Google map
     @media only screen and (min-width: 769px) {
         .owl-caption {
             height: 100vh;
-            padding-top: 425px;
+            /* padding-top: 425px; */
+        }
+        .owl-caption .caption-body {
+            position: absolute;
+            bottom: 0;
         }
         .header-title {
             font-family: Crimson Text;
